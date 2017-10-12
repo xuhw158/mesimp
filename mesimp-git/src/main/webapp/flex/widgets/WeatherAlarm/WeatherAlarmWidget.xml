@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<configuration>
+<!-- <cities>
+<city name="大连"/>
+<city name="瓦房店"/>
+</cities> -->
+<!-- 滤掉行政区名称 逗号分隔-->
+<Exclude></Exclude>
+<datagrid>
+<element label="城市" field="name"/>
+<element label="24小时" field="weather12_24" width="70"/>
+<element label="气温" field="temp12_24" width="65"/>
+<element label="48小时" field="weather36_48" width="70"/>
+<element label="气温" field="temp36_48" width="65"/>
+<element label="72小时" field="weather60_72" width="70"/>
+<element label="气温" field="temp60_72" width="65"/>
+ <!--<element label="96小时" field="weather84_96" width="70"/>
+<element label="气温" field="temp84_96" width="65"/>
+ <element label="120小时" field="weather108_120" width="70"/>
+<element label="气温" field="temp108_120" width="65"/>
+<element label="144小时" field="weather132_144" width="70"/>
+<element label="气温" field="temp132_144" width="65"/>
+<element label="168小时" field="weather156_168" width="70"/>
+<element label="气温" field="temp156_168" width="65"/>  -->
+</datagrid>
+</configuration>

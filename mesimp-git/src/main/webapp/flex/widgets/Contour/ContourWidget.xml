@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!-- 所有前台配置field全部小写 -->
+<!-- 前台配置   -->
+<configuration>
+<nameField>stationname</nameField>
+<weather>
+<element name="最高温度" unit="℃" field="maxtemp" color="0xFF0000" />
+<element name="平均温度"  unit="℃" field="drybultemp" color="0xFF0000"/>
+<element name="最低温度"  unit="℃" field="mintemp" color="0xFF0000" />
+<element name="累计降水"  unit="mm" field="precipitation" color="0x0000FF"/>
+<element name="极大风"  unit="m/s" field="exmaxwindv" color="0xFF0000"/>
+<!-- <element name="极大风"  unit="m/s" field="exmaxwindv" color="0xFF0000" gp="1"/> -->
+</weather>
+<datagrid>
+	<element label="站点编号" field="stationcode" width="75"/>
+	<element label="站点名称" field="stationname" width="120"/>
+</datagrid> 
+<popup>
+	<element label="站号" field="stationcode"/>
+	<element label="站名" field="stationname"/>
+	<element label="最高温度" field="maxtemp" unit="℃"/>
+	<element label="平均温度"  field="drybultemp" unit="℃"/>
+	<element label="最低温度"   field="mintemp" unit="℃"/>
+	<element label="累计降水"   field="precipitation" unit="毫米"/>
+	<element label="极大风" field="exmaxwindv" unit="米/秒"/>
+</popup>
+<!-- 是否显示等值面值 true false -->
+<showValue>false</showValue>
+<scale>3500000</scale>
+<!-- 行政区定位面图层 -->
+<countyLayer url="http://192.168.1.201:6080/arcgis/rest/services/cd/MapServer/37" nameField="NAME"/>
+<!-- 等值面生成GP服务 -->
+<GPPolygon>http://192.168.1.201:6080/arcgis/rest/services/contour2/GPServer/contour_surfaceNotSimply</GPPolygon>
+<!-- 等值线生成GP服务 -->
+<GPLine>http://192.168.1.201:6080/arcgis/rest/services/contourlineF/GPServer/contour_lineNew</GPLine>
+<!-- 配置数字缺报特殊值 -->
+<Null>9999.9</Null>
+<!-- 后台数据源配置   -->
+<fields>
+	<field type="avg" field="drybultemp" />
+	<field type="sum" field="precipitation" />
+	<field type="max" field="maxtemp"/>
+	<field type="min" field="mintemp"/>
+	<field type="max" field="exmaxwindv"/>
+</fields>
+</configuration>

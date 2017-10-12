@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration>
+    <!-- geo, dms, mercator -->
+    <outputunit>geo</outputunit>
+    <numberformatter precision="4"/>
+</configuration>
