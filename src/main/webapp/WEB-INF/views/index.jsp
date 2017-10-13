@@ -47,8 +47,8 @@
 					<li class="mainlevel">
 						<a href="#"  data-mid="1"><img alt="" src="${basePath }/static/img/menu02.png" width="50">调查成果</a>
 						<ul>
-				        	<li><a href="#" data-mid="1-1" data-src="/flex/index_Main.html">单位清查</a></li>
-				            <li><a href="#" data-mid="1-2" data-src="/flex/index_Main.html">产业调查</a></li>
+				        	<li><a href="#" data-mid="1-1" data-src="/sunrvey/company">单位清查</a></li>
+				            <li><a href="#" data-mid="1-2" data-src="/sunrvey/industry">产业调查</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">

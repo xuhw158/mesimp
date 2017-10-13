@@ -43,4 +43,6 @@ $(function(){
 	$('#nav li > a').on('click',function(){
 		openTab(this);
 	});
+	
+	$('#nav li > a[data-mid="1-1"]').click();
 });
