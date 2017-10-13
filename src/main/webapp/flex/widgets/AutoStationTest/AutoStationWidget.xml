@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!-- 所有前台配置field全部小写 -->
+<!-- 前台配置   -->
+<configuration>
+<nameField>stationname</nameField>
+<weather>
+<element name="温度" selected="true" unit="℃" field="drybultemp"  xoffset="-25" yoffset="0"  color="0xFF0000" showChart="true"/>
+<element name="雨量" selected="true" unit="mm" field="precipitation"  xoffset="0" yoffset="25" color="0x0000FF" showChart="true" chartType="Column3D"/>
+<element name="极大风" selected="true" unit="m/s" field="windvelocity" windDirectfield="winddirect" xoffset="0" yoffset="0" showChart="true" color="0x000000"/>
+<element name="湿度"  field="relhumidity"  xoffset="-25" yoffset="-25"  color="0xFF0000" showChart="true" maxvalue="100" minvalue="0"/>
+<!-- <element name="平均气压" selected="true" unit="百帕" field="stationpress"  xoffset="35" yoffset="0"  color="0x00FF00" showChart="true" formatInt="true" /> -->
+<!-- <element name="降雪"  unit="mm" field="snow"  xoffset="0" yoffset="-25" showChart="true"/> -->
+</weather>
+<filter>
+<element label="温度（℃）" field="drybultemp" />
+<element label="雨量（mm）" field="precipitation"/>
+<element label="风速（m/s）" field="windvelocity"/>
+<element label="湿度" field="relhumidity"/>
+</filter>
+ <datagrid>
+ <element label="站点名称" field="stationname" width="85"/>
+<element label="温度（℃）" field="drybultemp" width="85"/>
+<element label="雨量（mm）" field="precipitation" width="85"/>
+<element label="风速（m/s）" field="windvelocity" width="85"/>
+<element label="湿度" field="relhumidity" width="85"/>
+</datagrid> 
+<popup>
+<element label="站号" field="stationcode"/>
+<element label="站名" field="stationname"/>
+<element label="最高气温" field="maxtemp" unit="℃"/>
+<element label="最低气温" field="mintemp" unit="℃"/>
+<element label="气温" field="drybultemp" unit="℃"/>
+<element label="降水" field="precipitation" unit="毫米"/>
+<element label="风力" field="windvelocity" unit="米/秒"/>
+<element label="气压" field="stationpress" unit="百帕"/>
+<element label="湿度" field="relhumidity" unit="%"/>
+</popup>
+<QYscale>600000</QYscale>
+<!-- 配置数字缺报特殊值 逗号分隔-->
+<Null>9999.9</Null>
+<!-- 滤掉站点名称 逗号分隔-->
+<Exclude></Exclude>
+<!-- 后台数据源配置   -->
+<fields>
+<field field="timeminpsta" />
+<field field="drybultemp" />
+<field field="maxtemp"/>
+<field field="mintemp"/>
+<field field="windDirect"/>
+<field field="windvelocity"/>
+<field field="precipitation"/>
+<field field="exMaxWindD"/>
+<field field="exMaxWindV"/>
+<field field="precipitation"/>
+<field field="relHumidity"/>
+<field field="stationpress"/>
+</fields>
+<where></where>
+</configuration>

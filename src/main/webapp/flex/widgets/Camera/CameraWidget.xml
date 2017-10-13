@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+<stations>
+<station name="西岭雪山" id="S1608" lon="103.1762222"  lat="30.70244444" SBSBH="SG20140029101" videoURL="http://10.194.239.62:8080/DYPubService/service/monitor/index.html"/>
+<station name="雾山" id="S1605" lon="103.3971111"  lat="30.68177778" SBSBH="SG20140029102"  videoURL="http://10.194.239.62:8080/DYPubService/service/monitor/index.html"/>
+</stations>
+<picServer>http://10.194.239.61/PIC/</picServer>
+</configuration>

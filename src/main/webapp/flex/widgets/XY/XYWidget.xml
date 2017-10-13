@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<configuration>
+<nameField>NAME</nameField>
+<popup>
+<element label="名称" field="NAME" />
+<element label="经度" field="DISPLAY_X" />
+<element label="纬度" field="DISPLAY_Y" />
+<element label="地址" field="ADDRESS" />
+<element label="电话" field="TELEPHONE" />
+</popup>
+<xyURL>http://htdf.7766.org:6080/arcgis/rest/services/cdXY/MapServer/0</xyURL>
+<layers>
+	<layer name="医疗服务" url="http://htdf.7766.org:6080/arcgis/rest/services/cdXY/MapServer/20" titlefield="NAME" xyLayerNumField="YLFW"/>
+	<layer name="科研教育" url="http://htdf.7766.org:6080/arcgis/rest/services/cdXY/MapServer/21" titlefield="NAME" xyLayerNumField="KYJY"/>
+	<layer name="风景名胜" url="http://htdf.7766.org:6080/arcgis/rest/services/cdXY/MapServer/29" titlefield="NAME" xyLayerNumField="FJMS"/>
+	<layer name="港口码头" url="http://htdf.7766.org:6080/arcgis/rest/services/cdXY/MapServer/32" titlefield="NAME" xyLayerNumField="GKMT"/>
+	<layer name="高速出入口" url="http://htdf.7766.org:6080/arcgis/rest/services/cdXY/MapServer/33" titlefield="NAME" xyLayerNumField="GSCRK"/>
+</layers>
+ <datagrid>
+<element label="名称" field="NAME" width="150"/>
+<element label="经度" field="DISPLAY_X" width="85"/>
+<element label="纬度" field="DISPLAY_Y" width="85"/>
+<element label="地址" field="ADDRESS" width="85"/>
+<element label="电话" field="TELEPHONE" width="85"/>
+</datagrid> 
+</configuration>

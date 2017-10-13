@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!-- 所有前台配置field全部小写 -->
+<!-- 前台配置   -->
+<configuration>
+<nameField>stationname</nameField>
+<!-- 是否开启处理 -->
+<hasDo>true</hasDo>
+<weather>
+<element name="平均温度" field="drybultemp" xoffset="-25" yoffset="0" color="0xFF0000" />
+<element name="累计降水" field="precipitation" xoffset="0" yoffset="25"  color="0x0000FF"/>
+<element name="极大风" field="exmaxwindv" windDirectfield="winddirect"  xoffset="0" yoffset="0"  color="0x000000" />
+</weather>
+<!-- 气泡实况信息配置 -->
+<popup>
+<element label="最高温度" field="maxtemp" unit="℃"/>
+<element label="平均温度"  field="drybultemp" unit="℃"/>
+<element label="最低温度"   field="mintemp" unit="℃"/>
+<element label="累计降水"   field="precipitation" unit="毫米"/>
+<element label="极大风" field="exmaxwindv" unit="米/秒"/>
+</popup>
+<!-- 告警查询间隔 单位：秒 -->
+<timerTime>10</timerTime>
+<!-- 实况查询间隔 单位：秒 -->
+<timerRealTime>10</timerRealTime>
+<scale>2000000</scale>
+<!-- 配置数字缺报特殊值 -->
+<Null>9999.9</Null>
+<!-- 后台数据源配置   -->
+<fields>
+  <field type="avg" field="drybultemp" /> 
+<field type="sum" field="precipitation" />
+<field type="max" field="maxtemp"/>
+<field type="min" field="mintemp"/>
+<field type="max" field="exmaxwindv"/>
+</fields>
+</configuration>

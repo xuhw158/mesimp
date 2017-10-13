@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!-- 所有前台配置field全部小写 -->
+<!-- 前台配置   -->
+<configuration>
+<nameField>stationname</nameField>
+<weather>
+<element name="最高温度" unit="℃" field="maxtemp" color="0xFF0000"/>
+<element name="平均温度"  unit="℃" field="drybultemp" color="0xFF0000"/>
+<element name="最低温度"  unit="℃" field="mintemp" color="0xFF0000"/>
+<element name="累计降水"  unit="mm" field="precipitation" color="0x0000FF"/>
+<element name="极大风"  unit="m/s" field="exmaxwindv" color="0xFF0000" chartType="Column3D"/>
+</weather>
+ <datagrid>
+ <element label="站点名称" field="stationname" width="110"/>
+<element label="最高温度" field="maxtemp" width="75"/>
+<element label="平均温度"  field="drybultemp" width="75"/>
+<element label="最低温度"   field="mintemp" width="75"/>
+<element label="累计降水"   field="precipitation" width="75"/>
+<element label="极大风" field="exmaxwindv" width="75"/>
+</datagrid> 
+<popup>
+<element label="站号" field="stationcode"/>
+<element label="站名" field="stationname"/>
+<element label="最高温度" field="maxtemp" unit="℃"/>
+<element label="平均温度"  field="drybultemp" unit="℃"/>
+<element label="最低温度"   field="mintemp" unit="℃"/>
+<element label="累计降水"   field="precipitation" unit="毫米"/>
+<element label="极大风" field="exmaxwindv" unit="米/秒"/>
+</popup>
+<!-- 配置时间默认取值 -->
+<setDate>false</setDate>
+<scale>2000000</scale>
+<!-- 配置数字缺报特殊值 -->
+<Null>9999.9</Null>
+<!-- 滤掉站点名称 逗号分隔-->
+<Exclude></Exclude>
+<!-- 后台数据源配置   -->
+<fields>
+<field type="avg" field="drybultemp" />
+<field type="sum" field="precipitation" />
+<field type="max" field="maxtemp"/>
+<field type="min" field="mintemp"/>
+<field type="max" field="exmaxwindv"/>
+</fields>
+</configuration>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+<!-- <datagrid>
+ <element label="字段1" field="neName"/>
+<element label="字段2" field="neType" width="200"/>
+<element label="字段3" field="value2"/>
+</datagrid> -->
+</configuration>

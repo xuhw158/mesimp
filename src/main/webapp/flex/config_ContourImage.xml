@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2010 ESRI
+//
+// All rights reserved under the copyright laws of the United States.
+// You may freely redistribute and use this software, with or
+// without modification, provided you include the original copyright
+// and use restrictions.  See use restrictions in the file:
+// <install location>/License.txt
+//
+// Read more about ArcGIS Viewer for Flex 2.2 - http://links.esri.com/flexviewer
+//
+////////////////////////////////////////////////////////////////////////////////
+-->
+<configuration>
+    <title>(取恒飞色斑图)天津天气预报色斑图</title>
+    <subtitle></subtitle>
+    <logo>assets/images/logo.png</logo>
+    <style>
+        <!-- <colors>0xFFFFFF,0x333333,0x101010,0x000000,0xFFD700</colors> -->
+        <font name="宋体"/>
+        <colors>0x393832,0xFFFFFF,0x00CCFF,0xddedfa,0x000000,0x66CCCC</colors>
+        <alpha>0.9</alpha>
+    </style>
+
+    <!-- UI elements -->
+    <widget left="10"  top="10"    config="widgets/Navigation/NavigationWidget.xml" url="widgets/Navigation/NavigationWidget.swf"/>
+    <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml" url="widgets/OverviewMap/OverviewMapWidget.swf"/>
+    <widget right="60" top="0"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
+    <widget left="0"   bottom="0"     config="widgets/FootController/HeaderControllerWidget.xml" url="widgets/FootController/HeaderControllerWidget.swf"/>
+	<widget label="色斑图" right="15"  bottom="50" config="widgets/ContourImage/ContourImageWidget.xml"  url="widgets/ContourImage/ContourImageWidget.swf"/>
+	<widget label="地理位置" left="10"  bottom="5" config="widgets/Coordinate/CoordinateWidget.xml"  url="widgets/Coordinate/CoordinateWidget.swf"/>
+    <map scalebarvisible="false"> 
+        <basemaps>
+         <layer label="矢量"  type="tiled" visible="false" alpha="1"
+                   url="http://192.168.1.201:6080/ArcGIS/rest/services/cdVector/MapServer"/>  
+            <layer label="卫星"  type="tiled" visible="false" alpha="1"
+                   url="http://192.168.1.201:6080/ArcGIS/rest/services/cdRaster/MapServer"/>  
+             <layer label="普通" type="dynamic" visible="true"  alpha="1" imageformat="PNG32"
+                  url="http://192.168.1.201:6080/arcgis/rest/services/cd/MapServer"/>  
+        </basemaps>
+    </map>
+
+    <!-- widgets organized into widget containers that manage close/open etc -->
+    <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
+   <widgetcontainer layout="float">
+        <widget label="快速定位"         left="50" top="50"
+                icon="assets/images/bookmark.png"
+                config="widgets/Bookmark/BookmarkWidget.xml"
+                url="widgets/Bookmark/BookmarkWidget.swf"/>
+        <widget label="自定义文字" left="50" top="50"
+                icon="assets/images/font.png"
+                config="widgets/Text/DrawWidget.xml"
+                url="widgets/Text/DrawWidget.swf"/>
+        <widget label="绘图测量" left="50" top="50"
+                icon="assets/images/i_draw2.png"
+                config="widgets/Draw/DrawWidget.xml"
+                url="widgets/Draw/DrawWidget.swf"/>
+        <widget label="态势标绘" left="50" top="50"
+                icon="assets/images/drawing.png"
+                config="widgets/Arrow/ArrowWidget.xml"
+                url="widgets/Arrow/ArrowWidget.swf"/>
+           <widget label="云图" left="50" top="50"  
+                icon="assets/images/i_nav1.png"
+                config="widgets/Cloud/CloudWidget.xml"
+                url="widgets/Cloud/CloudWidget.swf"/>
+         <widget label="雷达" left="50" top="50"
+                icon="assets/images/i_nav2.png"
+                config="widgets/Radar/RadarWidget.xml"
+                url="widgets/Radar/RadarWidget.swf"/>
+        <widget label="打印" left="50" top="50"
+                icon="assets/images/i_print.png"
+                config="widgets/Print/PrintWidget.xml"
+                url="widgets/Print/PrintWidget.swf"/>
+    </widgetcontainer>
+
+</configuration>
