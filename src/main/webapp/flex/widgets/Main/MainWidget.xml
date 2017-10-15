@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<configuration>
+ <datagrid>
+ <element label="企业名称" field="name" width="100"/>
+<element label="产业类别" field="type" width="100"/>
+<element label="其它信息" field="info" width="100"/>
+</datagrid> 
+</configuration>

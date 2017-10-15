@@ -28,9 +28,9 @@
     <!-- UI elements -->
     <widget left="10"  top="50"    config="widgets/Navigation/NavigationWidget.xml" url="widgets/Navigation/NavigationWidget.swf"/>
    <!--  <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml" url="widgets/OverviewMap/OverviewMapWidget.swf"/> -->
-    <widget right="60" top="0"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
-  <!--   <widget left="0"   bottom="0"     config="widgets/FootController/HeaderControllerWidget.xml" url="widgets/FootController/HeaderControllerWidget.swf"/>
-	<widget label="模板" right="15"  bottom="20" config="widgets/Template/TemplateWidget.xml"  url="widgets/Template/TemplateWidget.swf"/>-->
+    <widget right="15" top="15"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
+    <widget left="100"   bottom="0"     config="widgets/FootController/HeaderControllerWidget.xml" url="widgets/FootController/HeaderControllerWidget.swf"/>
+	<widget label="模板" right="15"  bottom="20" config="widgets/Main/MainWidget.xml"  url="widgets/Main/MainWidget.swf"/>-->
 	<widget label="地理位置" left="10"  bottom="5" config="widgets/Coordinate/CoordinateWidget.xml"  url="widgets/Coordinate/CoordinateWidget.swf"/> 
     <map  scalebarvisible="false"  addarcgisbasemaps="false">
         <basemaps>
@@ -48,7 +48,7 @@
     <!-- widgets organized into widget containers that manage close/open etc -->
     <!-- supported layout property options: horizontal(default)|float|vertical|fix-->
    <widgetcontainer layout="float">
-       <widget label="快速定位"         left="50" top="50"
+       <!-- <widget label="快速定位"         left="50" top="50"
                 icon="assets/images/bookmark.png"
                 config="widgets/Bookmark/BookmarkWidget.xml"
                 url="widgets/Bookmark/BookmarkWidget.swf"/>
@@ -71,7 +71,11 @@
          <widget label="雷达" left="50" top="50" 
                 icon="assets/images/i_nav2.png"
                 config="widgets/Radar/RadarWidget.xml"
-                url="widgets/Radar/RadarWidget.swf"/>
+                url="widgets/Radar/RadarWidget.swf"/> -->
+            <widget label="快速定位"         left="50" top="50"
+                icon="assets/images/i_search.png"
+                config="widgets/Zoom/ZoomWidget.xml"
+                url="widgets/Zoom/ZoomWidget.swf"/>
         <widget label="打印" left="50" top="50"
                 icon="assets/images/i_print.png"
                 config="widgets/Print/PrintWidget.xml"
