@@ -14,6 +14,6 @@
 /*index-tab*/
 #index_banner .nav {border:0;}
 #index_banner .nav > li > a{padding-bottom:0; padding-top:0; margin-top:4px; font-weight: bold;}
-#index_banner .nav > li > a{background: #9ac3b2; border-color: #9ac3b2; color:#ffffff;}
-#index_banner .nav > li.active > a{background: #98ffd5;border-color: #98ffd5; color:#6b6b6b;}
+#index_banner .nav > li > a{background: #ffffff; border-color: #d5d5d5; color:#6b6b6b;}
+#index_banner .nav > li.active > a{background: #f1881b;border-color: #d5d5d5; color:#ffffff;}
 .tab-pane{height:100%;}
