@@ -52,7 +52,10 @@
 				        </ul>
 					</li>
 					<li class="mainlevel">
-						<a href="#"  data-mid="2"  data-src="/flex/index_Main.html"><img alt="" src="${basePath }/static/img/menu07.png" width="50">地图联动</a>
+						<a href="#" data-mid="3" ><img alt="" src="${basePath }/static/img/menu07.png" width="50">地图联动</a>
+						<ul class="more150">
+				        	<li><a href="#" data-mid="3-1"  data-src="/flex/index_DWQC_SL.html">单位清查数量</a></li>
+				        </ul>
 					</li>
 					<li class="mainlevel">
 						<a href="#"  data-mid="3"><img alt="" src="${basePath }/static/img/menu04.png" width="50">专题调查</a>
