@@ -1,9 +1,9 @@
 @CHARSET "UTF-8";
 .index_container .header{height:85px; background: url(../img/head_bg.jpg) no-repeat; }
-#index_banner{height:30px;background: url(../img/head_statetool.png);}
+#index_banner{height:31px;background: url(../img/head_statetool.png)  repeat-x;border-bottom:1px solid #b7b7b8;}
 
 /*menu*/
-#nav { display:block; float: right; margin-top:3px; margin-right:20px;}
+#nav { display:block; float: right; margin-top:3px; margin-right:30px;}
 #nav .mainlevel { float:left;  width:70px;/*IE6 only*/text-align: center; font-weight: bold; }
 #nav .mainlevel a {color:#ffffff; text-decoration:none; line-height:32px; display:block; padding:0 20px; width:100px;}
 #nav .mainlevel a:hover {color:#fff; text-decoration:none;}

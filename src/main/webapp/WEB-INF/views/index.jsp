@@ -32,7 +32,7 @@
 		});
 		</script>
 	</head>
-	<body>
+	<body style="overflow:hidden;">
 		<div class="index_container">
 			<div class="header" id="index_header">
 				<ul id="nav">
@@ -47,7 +47,7 @@
 					<li class="mainlevel">
 						<a href="#"  data-mid="1"><img alt="" src="${basePath }/static/img/menu02.png" width="50">调查成果</a>
 						<ul>
-				        	<li><a href="#" data-mid="1-1" data-src="/sunrvey/company">单位清查</a></li>
+				        	<li><a href="#" data-mid="1-1" data-src="/sunrvey/company/num">单位清查</a></li>
 				            <li><a href="#" data-mid="1-2" data-src="/sunrvey/industry">产业调查</a></li>
 				        </ul>
 					</li>
@@ -70,7 +70,7 @@
 					</li>
 					<li class="mainlevel">
 						<a href="#" data-mid="4"><img alt="" src="${basePath }/static/img/menu06.png" width="50">经济地图</a>
-					<ul class="more200">
+						<ul class="more200">
 				        	<li><a href="#" data-mid="4-1">渔港分布图</a></li>
 				            <li><a href="#" data-mid="4-2">海洋油气企业分布图</a></li>
 							<li><a href="#" data-mid="4-3">海洋矿业企业分布图</a></li>
