@@ -114,14 +114,13 @@
 			</div>
 			<div id="index_banner">
 				<ul  class="nav nav-tabs">
-					<!-- <li  class="active">
-						<a href="#A" data-toggle="tab">  
-					       海洋船舶工业企业分布图
-					       <label data-dismiss="close">&nbsp;&nbsp;&times;</label>
+					<li  class="active">
+						<a href="#home" data-toggle="tab">  
+					       首页
+					       <label >&nbsp;</label>
 				        </a> 
-						
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#B" data-toggle="tab">
 							区域数据统计
 							<label data-dismiss="close">&nbsp;&nbsp;&times;</label>
@@ -130,10 +129,10 @@
 				</ul>
 			</div>
 			<div id="index_main" class="tab-content">
-				<%-- <div class="tab-pane  fade in active" id="A">
+				 <div class="tab-pane  fade in active" id="home">
 					<iframe width="100%"  height="100%"  frameborder="0" src="${basePath }/flex/index_Main.html"></iframe>
 				</div>
-				<div class="tab-pane  fade" id="B">
+				<%--<div class="tab-pane  fade" id="B">
 					<iframe width="100%"  height="100%"  frameborder="0" src="http://www.baidu.com"></iframe>
 				</div> --%>
 			</div>
