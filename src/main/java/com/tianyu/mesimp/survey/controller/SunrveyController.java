@@ -31,10 +31,15 @@ public class SunrveyController {
 	
 	@ResponseBody
 	@RequestMapping("/company/num/getData")
-	public ResponseVO<List<CompanyNum>> getCompanyNumData() {
+	public ResponseVO<List<CompanyNum>> getCompanyNumData(String codes) {
 		
-		List<CompanyNum> data = sunrveyService.getCompanyNumData();
-		
+		List<CompanyNum> data = null;
+		try {
+			data = sunrveyService.getCompanyNumData(codes);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return ResponseVO.<List<CompanyNum>>exception();
+		}
 		return ResponseVO.<List<CompanyNum>>build().setData(data);
 	}
 	

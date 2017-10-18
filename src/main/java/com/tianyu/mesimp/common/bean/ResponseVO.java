@@ -71,5 +71,14 @@ public class ResponseVO<T> {
 		return responseVO.setCode(ResponseCode.SUCCESS);
 	}
 	
+	/**
+	 * 默认抛出异常
+	 * @return
+	 */
+	public static <T> ResponseVO<T> exception(){
+		ResponseVO<T> responseVO = new ResponseVO<T>();
+		return responseVO.setCode(ResponseCode.EXCEPTION).setMsg("服务器发生异常！");
+	}
+	
 	
 }

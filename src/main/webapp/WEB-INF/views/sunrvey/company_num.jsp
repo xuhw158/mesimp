@@ -9,10 +9,35 @@
 		<script src="${basePath}/static/js/createChart.js" ></script>
 		<script type="text/javascript">
 			$(function(){
-				$.ajax({
-					
-				});
+				_search();
 			});
+			
+			function _search(){
+				
+				var $provinceInput = $(':checkbox[name="sel_province"]:checked');
+				var codes = '';
+				$provinceInput.each(function(i , obj){
+					codes += (obj.value + '|');
+				});
+				codes = codes.substring(0,codes.length-1);
+				var param = {'codes':codes};
+				
+				$.ajax({
+					url:base_path + '/sunrvey/company/num/getData',
+				    type:'POST',
+				    data:param,
+				    dataType:'json', 
+				    success:function(data){
+				        if(data && data.code == 0){
+				        	var datas = data.data;
+				        	CreateChart.createPie('chartdiv1','provinceName','number',datas);
+				        	CreateChart.createSerial('chartdiv2','provinceName','number',datas);
+				        }else{
+				        	alert(data.desc);
+				        }
+				    }
+				});
+			}
 		</script>
 	</head>
 	<body>
@@ -43,7 +68,7 @@
 						</div>
 						<div class="form-group">
 							<div class="col-sm-12">
-								<button type="submit" class="btn btn-xs btn-primary">查询</button>
+								<button type="button" class="btn btn-xs btn-primary" onclick="_search()">查询</button>
 							</div>
 						</div>
 					</form>
@@ -55,8 +80,8 @@
 				</div>
 				<div class="c_wrap_content">
 					<div class="row">
-						 <div id="chartdiv1" class="col-sm-6" style="height: 400px;"></div>
-						 <div id="chartdiv2" class="col-sm-6" style="height: 400px;"></div>
+						 <div id="chartdiv1" class="col-sm-6" style="height: 450px;"></div>
+						 <div id="chartdiv2" class="col-sm-6" style="height: 450px;"></div>
 					</div>
 				</div>
 			</div>

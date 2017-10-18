@@ -22,6 +22,7 @@
 <!-- amcharts -->
 <script src="${basePath}/static/amcharts/amcharts.js" type="text/javascript"></script>
 <script src="${basePath}/static/amcharts/pie.js" type="text/javascript"></script>
+<script src="${basePath}/static/amcharts/serial.js" type="text/javascript"></script>
 <!-- datepicker -->
 <script type="text/javascript" src="${basePath}/static/My97DatePicker/WdatePicker.js"></script>
 
