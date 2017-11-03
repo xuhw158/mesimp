@@ -14,9 +14,9 @@
 			
 			function _search(){
 				
-				var $provinceInput = $(':checkbox[name="sel_province"]:checked');
+				var $cityInput = $(':checkbox[name="sel_city"]:checked');
 				var codes = '';
-				$provinceInput.each(function(i , obj){
+				$cityInput.each(function(i , obj){
 					codes += (obj.value + '|');
 				});
 				codes = codes.substring(0,codes.length-1);
@@ -30,8 +30,8 @@
 				    success:function(data){
 				        if(data && data.code == 0){
 				        	var datas = data.data;
-				        	CreateChart.createPie('chartdiv1','provinceName','number',datas);
-				        	CreateChart.createSerial('chartdiv2','provinceName','number',datas);
+				        	CreateChart.createPie('chartdiv1','cityName','number',datas);
+				        	CreateChart.createSerial('chartdiv2','cityName','number',datas);
 				        }else{
 				        	alert(data.desc);
 				        }
@@ -51,20 +51,20 @@
 					<form class="form-horizontal">
 						<div class="form-inline">
 							<label class="control-label">行政区名称：</label>
-							<div class="checkbox"><label><input type="checkbox" name="sel_province" value="110000" checked="checked"/> 沈阳市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="116000" checked="checked"/> 大连市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="114000" checked="checked"/> 鞍山市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="113000" checked="checked"/> 抚顺市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="117000" checked="checked"/> 本溪市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="118000" checked="checked"/> 丹东市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="121000" checked="checked"/> 锦州市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="115000" checked="checked"/> 营口市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="123000" checked="checked"/> 阜新市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="111000" checked="checked"/> 辽阳市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="124000" checked="checked"/> 盘锦市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="112000" checked="checked"/> 铁岭市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="122000" checked="checked"/> 朝阳市</label></div>
-							<div class="checkbox"><label><input type="checkbox"  name="sel_province" value="125000" checked="checked"/> 葫芦岛市</label></div>
+							<div class="checkbox"><label><input type="checkbox" name="sel_city" value="110000" checked="checked"/> 沈阳市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="116000" checked="checked"/> 大连市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="114000" checked="checked"/> 鞍山市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="113000" checked="checked"/> 抚顺市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="117000" checked="checked"/> 本溪市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="118000" checked="checked"/> 丹东市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="121000" checked="checked"/> 锦州市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="115000" checked="checked"/> 营口市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="123000" checked="checked"/> 阜新市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="111000" checked="checked"/> 辽阳市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="124000" checked="checked"/> 盘锦市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="112000" checked="checked"/> 铁岭市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="122000" checked="checked"/> 朝阳市</label></div>
+							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="125000" checked="checked"/> 葫芦岛市</label></div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-12">

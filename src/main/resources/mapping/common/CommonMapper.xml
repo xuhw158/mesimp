@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tianyu.mesimp.common.dao.CommonMapper">
+	
+	<resultMap id="CityInfoMap" type="com.tianyu.mesimp.common.entity.CityInfo">
+		<id column="city_code" property="cityCode" jdbcType="VARCHAR" />
+		<result column="city_name" property="cityName" jdbcType="VARCHAR" />
+		<result column="sort" property="sort" jdbcType="INTEGER" />
+	</resultMap>
+	
+	<select id="getCities" resultMap="CityInfoMap">
+		<![CDATA[
+			select * from d_city
+		]]>
+	</select>
+	
+</mapper>

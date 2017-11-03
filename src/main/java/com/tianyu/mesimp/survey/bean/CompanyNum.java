@@ -5,11 +5,11 @@ public class CompanyNum {
 	/**
 	 * 省份编码
 	 */
-	private String provinceCode;
+	private String cityCode;
 	/**
 	 * 省份名称
 	 */
-	private String provinceName;
+	private String cityName;
 	/**
 	 * 企业数
 	 */
@@ -18,39 +18,47 @@ public class CompanyNum {
 	 * 排序
 	 */
 	private Integer sort;
-	public String getProvinceCode() {
-		return provinceCode;
+
+	public String getCityCode() {
+		return cityCode;
 	}
-	public void setProvinceCode(String provinceCode) {
-		this.provinceCode = provinceCode;
+
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
 	}
-	public String getProvinceName() {
-		return provinceName;
+
+	public String getCityName() {
+		return cityName;
 	}
-	public void setProvinceName(String provinceName) {
-		this.provinceName = provinceName;
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
 	}
+
 	public Integer getNumber() {
 		return number;
 	}
+
 	public void setNumber(Integer number) {
 		this.number = number;
 	}
-	
+
 	public Integer getSort() {
 		return sort;
 	}
+
 	public void setSort(Integer sort) {
 		this.sort = sort;
 	}
-	public CompanyNum() {}
-	
-	public CompanyNum(String provinceCode, String provinceName, Integer number, Integer sort) {
-		this.provinceCode = provinceCode;
-		this.provinceName = provinceName;
+
+	public CompanyNum() {
+	}
+
+	public CompanyNum(String cityCode, String cityName, Integer number, Integer sort) {
+		this.cityCode = cityCode;
+		this.cityName = cityName;
 		this.number = number;
 		this.sort = sort;
 	}
-	
-	
+
 }
