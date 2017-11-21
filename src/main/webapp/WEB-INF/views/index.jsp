@@ -32,7 +32,7 @@
 		});
 		</script>
 	</head>
-	<body>
+	<body style="overflow:hidden;">
 		<div class="index_container">
 			<div class="header" id="index_header">
 				<ul id="nav">
@@ -47,12 +47,15 @@
 					<li class="mainlevel">
 						<a href="#"  data-mid="1"><img alt="" src="${basePath }/static/img/menu02.png" width="50">调查成果</a>
 						<ul>
-				        	<li><a href="#" data-mid="1-1" data-src="/sunrvey/company">单位清查</a></li>
+				        	<li><a href="#" data-mid="1-1" data-src="/sunrvey/company/num">单位清查</a></li>
 				            <li><a href="#" data-mid="1-2" data-src="/sunrvey/industry">产业调查</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
-						<a href="#"  data-mid="2"  data-src="/flex/index_Main.html"><img alt="" src="${basePath }/static/img/menu07.png" width="50">地图联动</a>
+						<a href="#" data-mid="2" ><img alt="" src="${basePath }/static/img/menu07.png" width="50">地图联动</a>
+						<ul class="more150">
+				        	<li><a href="#" data-mid="2-1"  data-src="/flex/index_DWQC_SL.html">单位清查数量</a></li>
+				        </ul>
 					</li>
 					<li class="mainlevel">
 						<a href="#"  data-mid="3"><img alt="" src="${basePath }/static/img/menu04.png" width="50">专题调查</a>
@@ -67,7 +70,7 @@
 					</li>
 					<li class="mainlevel">
 						<a href="#" data-mid="4"><img alt="" src="${basePath }/static/img/menu06.png" width="50">经济地图</a>
-					<ul class="more200">
+						<ul class="more200">
 				        	<li><a href="#" data-mid="4-1">渔港分布图</a></li>
 				            <li><a href="#" data-mid="4-2">海洋油气企业分布图</a></li>
 							<li><a href="#" data-mid="4-3">海洋矿业企业分布图</a></li>
@@ -111,14 +114,13 @@
 			</div>
 			<div id="index_banner">
 				<ul  class="nav nav-tabs">
-					<!-- <li  class="active">
-						<a href="#A" data-toggle="tab">  
-					       海洋船舶工业企业分布图
-					       <label data-dismiss="close">&nbsp;&nbsp;&times;</label>
+					<li  class="active">
+						<a href="#home" data-toggle="tab">  
+					       首页
+					       <label >&nbsp;</label>
 				        </a> 
-						
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#B" data-toggle="tab">
 							区域数据统计
 							<label data-dismiss="close">&nbsp;&nbsp;&times;</label>
@@ -127,10 +129,10 @@
 				</ul>
 			</div>
 			<div id="index_main" class="tab-content">
-				<%-- <div class="tab-pane  fade in active" id="A">
+				 <div class="tab-pane  fade in active" id="home">
 					<iframe width="100%"  height="100%"  frameborder="0" src="${basePath }/flex/index_Main.html"></iframe>
 				</div>
-				<div class="tab-pane  fade" id="B">
+				<%--<div class="tab-pane  fade" id="B">
 					<iframe width="100%"  height="100%"  frameborder="0" src="http://www.baidu.com"></iframe>
 				</div> --%>
 			</div>
