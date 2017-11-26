@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<configuration>
+ <datagrid>
+<element label="企业名称" field="name" width="135"/>
+<element label="地址" field="address" width="70"/>
+<element label="联系人" field="pname" />
+<element label="联系人电话" field="phone"/>
+</datagrid> 
+<popup>
+<element label="企业名称" field="name"/>
+<element label="地址" field="address"/>
+<element label="联系人" field="pname" />
+<element label="联系人电话" field="phone"/>
+</popup>
+</configuration>

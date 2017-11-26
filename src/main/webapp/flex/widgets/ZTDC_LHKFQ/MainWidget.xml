@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<configuration>
+ <datagrid>
+ <element label="企业名称" field="name" width="100"/>
+<element label="产业类别" field="type" width="100"/>
+<element label="其它信息" field="info" width="100"/>
+</datagrid> 
+<popup>
+<element label="名称" field="name"/>
+<element label="级别" field="value"/>
+<element label="核准面积" field="value"/>
+<element label="填海面积" field="value"/>
+<element label="海岸线长度" field="value" />
+<element label="地区生产总值" field="value"/>
+<element label="财政收入" field="value"/>
+<element label="税收收入" field="value"/>
+<element label="进口总额" field="value"/>
+<element label="出口总额" field="value"/>
+<element label="固定资产投资额" field="value"/>
+<element label="年末从业人员" field="value"/>
+<element label="单位数量" field="value"/>
+</popup>
+</configuration>

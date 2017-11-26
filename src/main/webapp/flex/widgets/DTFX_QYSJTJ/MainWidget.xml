@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<configuration>
+ <datagrid>
+<element label="经度" field="lon" width="100"/>
+<element label="纬度" field="lat" width="100"/>
+</datagrid> 
+<popup>
+<element label="企业名称" field="name"/>
+<element label="地址" field="address"/>
+<element label="联系人" field="pname" unit="℃"/>
+<element label="联系人电话" field="phone" unit="℃"/>
+</popup>
+</configuration>
