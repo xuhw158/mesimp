@@ -5,7 +5,8 @@ function openTab(thisObj){
 	
 	if(src){
 		createTab(id,title,src);
-	}
+        document.getElementsByTagName('iframe')[0].contentWindow.document.getElementById("index_Main").flexFunction();
+    }
 }
 
 function createTab(id,title,src){

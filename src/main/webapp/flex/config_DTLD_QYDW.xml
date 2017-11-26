@@ -28,20 +28,18 @@
     <!-- UI elements -->
     <widget left="10"  top="50"    config="widgets/Navigation/NavigationWidget.xml" url="widgets/Navigation/NavigationWidget.swf"/>
    <!--  <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml" url="widgets/OverviewMap/OverviewMapWidget.swf"/> -->
-   <!--  <widget right="15" top="15"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/> -->
+    <widget right="15" top="15"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="100"   bottom="0"     config="widgets/FootController/HeaderControllerWidget.xml" url="widgets/FootController/HeaderControllerWidget.swf"/>
-	<widget label="模板" right="15"  bottom="20" config="widgets/DWQC_SL/DWQC_SL.xml"  url="widgets/DWQC_SL/DWQC_SL.swf"/>
+	<widget label="模板" right="15"  bottom="20" config="widgets/DTLD_QYDW/MainWidget.xml"  url="widgets/DTLD_QYDW/MainWidget.swf"/>-->
 	<widget label="地理位置" left="10"  bottom="5" config="widgets/Coordinate/CoordinateWidget.xml"  url="widgets/Coordinate/CoordinateWidget.swf"/> 
     <map  scalebarvisible="false"  addarcgisbasemaps="false">
         <basemaps>
              <layer label="矢量" type="tiled" visible="false"  alpha="1"
                    url="http://htdf.7766.org:6081/arcgis/rest/services/liaoning_arcgis_vector/MapServer"/>
-            <layer label="卫星"  type="tiled" visible="false" alpha="1"
+            <layer label="卫星"  type="tiled" visible="true" alpha="1"
                    url="http://htdf.7766.org:6081/arcgis/rest/services/liaoning_gd_mix/MapServer"/>
-                    <layer label="定制" type="dynamic" visible="true"  alpha="1"
-                   url="http://htdf.7766.org:6080/arcgis/rest/services/dwqc_sl_1/MapServer"/>
-                 <!--       <layer label="定制2" type="dynamic" visible="false"  alpha="1"
-                   url="http://htdf.7766.org:6080/arcgis/rest/services/dwqc_sl_2/MapServer"/> -->
+                    <layer label="定制" type="dynamic" visible="false"  alpha="1"
+                   url="http://htdf.7766.org:6081/arcgis/rest/services/liaoning_custom/MapServer"/>
         </basemaps>
         <operationallayers>
         </operationallayers>

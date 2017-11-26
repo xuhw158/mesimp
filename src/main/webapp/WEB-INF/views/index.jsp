@@ -56,7 +56,7 @@
 						<ul class="more150">
 				        	<li><a href="#" data-mid="2-1"  data-src="/flex/index_DWQC_SL.html">单位清查数量</a></li>
 				        	<li><a href="#" data-mid="2-2"  >产业调查数量</a></li>
-				        	<li><a href="#" data-mid="2-3"  >企业定位</a></li>
+				        	<li><a href="#" data-mid="2-3"  data-src="/flex/index_DTLD_QYDW.html">企业定位</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
@@ -66,7 +66,7 @@
 				            <li><a href="#" data-mid="3-2">围填海规模</a></li>
 							<li><a href="#" data-mid="3-3">防灾减灾</a></li>
 							<li><a href="#" data-mid="3-4">海洋节能减排</a></li>
-							<li><a href="#" data-mid="3-5">临海开发区</a></li>
+							<li><a href="#" data-mid="3-5" data-src="/flex/index_ZTDC_LHKFQ.html">临海开发区</a></li>
 							<li><a href="#" data-mid="3-6">海岛海洋经济</a></li>
 				        </ul>
 					</li>
@@ -76,7 +76,7 @@
 				        	<li><a href="#" data-mid="4-1">渔港分布图</a></li>
 				            <li><a href="#" data-mid="4-2">海洋油气企业分布图</a></li>
 							<li><a href="#" data-mid="4-3">海洋矿业企业分布图</a></li>
-							<li><a href="#" data-mid="4-4">海洋盐业企业分布图</a></li>
+							<li><a href="#" data-mid="4-4" data-src="/flex/index_JJDT_YYQY.html">海洋盐业企业分布图</a></li>
 							<li><a href="#" data-mid="4-5">海洋船舶工业企业分布图</a></li>
 							<li><a href="#" data-mid="4-6">海洋工程装备企业分布图</a></li>
 							<li><a href="#" data-mid="4-7">海洋化工企业分布图</a></li>
@@ -86,7 +86,7 @@
 					<li class="mainlevel">
 						<a href="#" data-mid="5"><img alt="" src="${basePath }/static/img/menu03.png" width="50">地图分析</a>
 					<ul class="more150">
-				        	<li><a href="#" data-mid="5-1">区域数据统计</a></li>
+				        	<li><a href="#" data-mid="5-1" data-src="/flex/index_DTFX_QYSJTJ.html">区域数据统计</a></li>
 				            <li><a href="#" data-mid="5-2">产业等密度分析</a></li>
 				        </ul>
 					</li>
