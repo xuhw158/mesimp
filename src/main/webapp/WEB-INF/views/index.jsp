@@ -55,6 +55,8 @@
 						<a href="#" data-mid="2" ><img alt="" src="${basePath }/static/img/menu07.png" width="50">地图联动</a>
 						<ul class="more150">
 				        	<li><a href="#" data-mid="2-1"  data-src="/flex/index_DWQC_SL.html">单位清查数量</a></li>
+				        	<li><a href="#" data-mid="2-2"  >产业调查数量</a></li>
+				        	<li><a href="#" data-mid="2-3"  >企业定位</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
@@ -92,20 +94,22 @@
 						<a href="#" data-mid="6"><img alt="" src="${basePath }/static/img/menu08.png" width="50">数据分析</a>
 					  <ul>
 				        	<li><a href="#" data-mid="6-1">单位清查</a></li>
-				            <li><a href="#" data-mid="6-2">产业调查</a></li>
+				            <li><a href="#" data-mid="6-2"  data-src="/analysis/industry">产业调查</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
 						<a href="#" data-mid="7"><img alt="" src="${basePath }/static/img/menu04.png" width="50">数据管理</a>
 					  <ul>
 				        	<li><a href="#" data-mid="7-1">单位清查</a></li>
-				            <li><a href="#" data-mid="7-2">产业调查</a></li>
+				            <li><a href="#" data-mid="7-2" data-src="/managedata/industry">产业调查</a></li>
 				            <li><a href="#" data-mid="7-3">专题调查</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
 						<a href="#" data-mid="8"><img alt="" src="${basePath }/static/img/menu09.png" width="50">用户管理</a>
-						
+						<ul>
+				        	<li><a href="#" data-mid="8-1" data-src="/user">用户管理</a></li>
+				        </ul>
 					</li>
 					<%-- <li class="mainlevel">
 						<a href="#"><img alt="" src="${basePath }/static/img/menu10.png" width="50">系统工具</a>

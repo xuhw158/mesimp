@@ -66,9 +66,9 @@
 							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="122000" checked="checked"/> 朝阳市</label></div>
 							<div class="checkbox"><label><input type="checkbox"  name="sel_city" value="125000" checked="checked"/> 葫芦岛市</label></div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" style="margin-top:5px;">
 							<div class="col-sm-12">
-								<button type="button" class="btn btn-xs btn-primary" onclick="_search()">查询</button>
+								<button type="button" class="btn btn-primary" onclick="_search()">查询</button>
 							</div>
 						</div>
 					</form>

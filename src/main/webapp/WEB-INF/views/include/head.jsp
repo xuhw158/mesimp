@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="${basePath}/static/bootstrap/css/bootstrap.min.css" >
 <link rel="stylesheet" href="${basePath}/static/bootstrap/css/bootstrap-theme.min.css" >
 <script src="${basePath}/static/bootstrap/js/bootstrap.min.js" ></script>
+<!-- bootstrap-table -->
+<link rel="stylesheet" href="${basePath}/static/bootstrap/bootstrap-table/bootstrap-table.min.css" >
+<script src="${basePath}/static/bootstrap/bootstrap-table/bootstrap-table.min.js" ></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -16,6 +19,10 @@
   <script src="${basePath}/static/bootstrap/respond.min.js"></script>
 <![endif]-->
     
+<!-- layer -->
+<link rel="stylesheet" href="${basePath}/static/layer/theme/default/layer.css" >
+<script src="${basePath}/static/layer/layer.js" ></script>
+
 <link href="${basePath}/static/style/common.css" rel="stylesheet" type="text/css">
 <link href="${basePath}/static/style/index.css" rel="stylesheet" type="text/css">
 
