@@ -80,12 +80,13 @@
 			</div>
 			<div class="c_wrap_content row">
 				<form class="form-horizontal">
-					<div  class="col-sm-3 form-group" >
+					<div  class="col-sm-4 form-group" >
 					 	<label for="areaType" class="col-sm-4 control-label">所属区域：</label>
 					    <div class="col-sm-8">
 							  <select class="form-control">
-							  	<option>沈阳</option>
-							    <option>大连</option>
+							  	<option>全部</option>
+							  	<option>沈阳市</option>
+							    <option>大连市</option>
 							    <option>鞍山市</option>
 							    <option>抚顺市</option>
 							    <option>本溪市</option>
@@ -101,21 +102,22 @@
 							  </select>
 					    </div>
 					 </div>
-					<div  class="col-sm-3 form-group" >
+					<div  class="col-sm-4 form-group" >
 					 	<label  class="col-sm-4 control-label">产业类别：</label>
 					    <div class="col-sm-8">
 					      <select class="form-control">
+					      	<option>全部</option>
 					      	<option>海洋渔业</option>
 					      </select>
 					    </div>
 					 </div>
-					 <div  class="col-sm-3 form-group" >
+					 <div  class="col-sm-4 form-group" >
 					 	<label for="enterpriseName" class="col-sm-4 control-label">企业名称：</label>
 					    <div class="col-sm-8">
 					      <input type="text" class="form-control" id="enterpriseName" placeholder="" >
 					    </div>
 					 </div>
-					<div class="col-sm-3 form-group">
+					<div class="col-sm-4 form-group">
 						<button type="button" class="btn btn-primary" onclick="_search()">查询</button>
 					</div>
 				</form>

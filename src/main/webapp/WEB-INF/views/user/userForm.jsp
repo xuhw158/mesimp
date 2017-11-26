@@ -36,8 +36,8 @@
 		 	<label for="areaType" class="col-sm-4 control-label">所属区域：</label>
 		    <div class="col-sm-8">
 				  <select class="form-control">
-				  	<option>沈阳</option>
-				    <option>大连</option>
+				  	<option>沈阳市</option>
+				    <option>大连市</option>
 				    <option>鞍山市</option>
 				    <option>抚顺市</option>
 				    <option>本溪市</option>
