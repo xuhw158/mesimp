@@ -93,16 +93,16 @@
 					<li class="mainlevel">
 						<a href="#" data-mid="6"><img alt="" src="${basePath }/static/img/menu08.png" width="50">数据分析</a>
 					  <ul>
-				        	<li><a href="#" data-mid="6-1">单位清查</a></li>
+				        	<!-- <li><a href="#" data-mid="6-1">单位清查</a></li> -->
 				            <li><a href="#" data-mid="6-2"  data-src="/analysis/industry">产业调查</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
 						<a href="#" data-mid="7"><img alt="" src="${basePath }/static/img/menu04.png" width="50">数据管理</a>
 					  <ul>
-				        	<li><a href="#" data-mid="7-1">单位清查</a></li>
+				        	<li><a href="#" data-mid="7-1"  data-src="/managedata/name">名录管理</a></li>
 				            <li><a href="#" data-mid="7-2" data-src="/managedata/industry">产业调查</a></li>
-				            <li><a href="#" data-mid="7-3">专题调查</a></li>
+<!-- 				            <li><a href="#" data-mid="7-3">专题调查</a></li> -->
 				        </ul>
 					</li>
 					<li class="mainlevel">

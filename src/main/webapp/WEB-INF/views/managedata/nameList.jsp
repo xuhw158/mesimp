@@ -42,11 +42,7 @@
 					    		{
 					    			field : 'enterpriseCode',
 					    			title : '组织机构代码证号',
-					    			align:'center',
-					    			formatter : function(value, row, index) { // 自定义格式
-					    				var u = '<button class="btn btn-link" onclick="showSituation()">'+value+'</button>';
-					    				return u;
-					    			}
+					    			align:'center'
 					    		},
 					    		{
 					    			field : 'contacts',
@@ -62,23 +58,19 @@
 					    			field : 'industryType',
 					    			title : '所属产业类别',
 					    			align:'center'
+					    		},
+					    		{
+					    			field : 'managementSituation',
+					    			title : '企业生产经营情况',
+					    			align:'center'
 					    		}
 			    			],
-			    		url : base_path + '/managedata/industry/list'
+			    		url : base_path + '/managedata/name/list'
 				};
 				
 				TableUtils.createTable('#baseTable',options);
 			}
 			
-			
-			function showSituation (){
-				TableUtils.modelLayer({
-					type:2,
-					title:'企业生产经营情况',
-					content:base_path + '/managedata/industry/situation',
-					btn:['关闭']
-				});
-			}
 		</script>
 	</head>
 	<body>
@@ -108,15 +100,6 @@
 							    <option>朝阳市</option>
 							    <option>葫芦岛市</option>
 							  </select>
-					    </div>
-					 </div>
-					<div  class="col-sm-4 form-group" >
-					 	<label  class="col-sm-4 control-label">产业类别：</label>
-					    <div class="col-sm-8">
-					      <select class="form-control">
-					      	<option>全部</option>
-					      	<option>海洋渔业</option>
-					      </select>
 					    </div>
 					 </div>
 					 <div  class="col-sm-4 form-group" >

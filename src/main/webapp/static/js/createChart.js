@@ -46,5 +46,84 @@ var CreateChart = {
 				  }
 
 				});
+		},
+		
+		createPieWithTable : function(divId , titleField , valueField ,columns, dataProvider,isTotal){
+			var mainDiv = $('#'+divId).addClass('row');
+			
+			var chartDiv = $('<div class="col-sm-6" id="chart_'+ divId+'">').css('height','100%');
+			var tableDiv = $('<div class="col-sm-6" id="table_'+ divId+'">').css('height','100%').css('padding-top','30px');
+			var table = $('<table class="table">');
+			tableDiv.append(table);
+			
+			mainDiv.html('').append(chartDiv).append(tableDiv);
+			
+			var chart = CreateChart.createPie('chart_' + divId , titleField , valueField , dataProvider);
+			
+			// 总量统计
+			if(isTotal){
+				var total=0;
+				$.each(dataProvider,function(k,v){
+					total += parseInt(v[valueField]);
+				});
+				var totalObj = {};
+				totalObj[titleField] = '总量';
+				totalObj[valueField] = total;
+				dataProvider.push(totalObj);
+			}
+			
+			// 表格基础设置
+			var tableOptions = {
+				striped : true, // 是否显示行间隔色
+				pagination : false, // 是否显示分页（*）
+				//cache : true, // 是否启用缓存
+				undefinedText : '', // undefined时显示文本
+				checkboxHeader : false, // 是否显示全选
+				columns:columns,
+				data:dataProvider
+			};
+			table.bootstrapTable(tableOptions);// 加载基本表格
+			
+			return {chart:chart , table:table};
+		},
+		
+		
+		createSerialWithTable : function (divId , titleField , valueField ,columns , dataProvider,isTotal){
+			var mainDiv = $('#'+divId).addClass('row');
+			
+			var chartDiv = $('<div class="col-sm-6" id="chart_'+ divId+'">').css('height','100%');
+			var tableDiv = $('<div class="col-sm-6" id="table_'+ divId+'">').css('height','100%').css('padding-top','30px');
+			var table = $('<table class="table">');
+			tableDiv.append(table);
+			
+			mainDiv.html('').append(chartDiv).append(tableDiv);
+			
+			var chart = CreateChart.createSerial('chart_' + divId , titleField , valueField , dataProvider);
+			
+			// 总量统计
+			if(isTotal){
+				var total=0;
+				$.each(dataProvider,function(k,v){
+					total += parseInt(v[valueField]);
+				});
+				var totalObj = {};
+				totalObj[titleField] = '总量';
+				totalObj[valueField] = total;
+				dataProvider.push(totalObj);
+			}
+			
+			// 表格基础设置
+			var tableOptions = {
+				striped : true, // 是否显示行间隔色
+				pagination : false, // 是否显示分页（*）
+				//cache : true, // 是否启用缓存
+				undefinedText : '', // undefined时显示文本
+				checkboxHeader : false, // 是否显示全选
+				columns:columns,
+				data:dataProvider
+			};
+			table.bootstrapTable(tableOptions);// 加载基本表格
+			
+			return {chart:chart , table:table};
 		}
 };
