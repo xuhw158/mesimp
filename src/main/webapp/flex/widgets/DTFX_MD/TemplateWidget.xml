@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<configuration>
+	<layer 
+		url="http://htdf.7766.org:6080/arcgis/rest/services/dwqc_sl_1/MapServer/33" />
+
+</configuration>

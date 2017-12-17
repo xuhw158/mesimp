@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<configuration>
+<datagrid>
+ <element label="行政区名称" field="name" width="120"/>
+<element label="产业调查数量" field="value" />
+</datagrid>
+</configuration>

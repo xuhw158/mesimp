@@ -1,23 +1,42 @@
 <?xml version="1.0" ?>
 <configuration>
- <datagrid>
- <element label="企业名称" field="name" width="100"/>
-<element label="产业类别" field="type" width="100"/>
-<element label="其它信息" field="info" width="100"/>
-</datagrid> 
-<popup>
-<element label="名称" field="name"/>
-<element label="级别" field="value"/>
-<element label="核准面积" field="value"/>
-<element label="填海面积" field="value"/>
-<element label="海岸线长度" field="value" />
-<element label="地区生产总值" field="value"/>
-<element label="财政收入" field="value"/>
-<element label="税收收入" field="value"/>
-<element label="进口总额" field="value"/>
-<element label="出口总额" field="value"/>
-<element label="固定资产投资额" field="value"/>
-<element label="年末从业人员" field="value"/>
-<element label="单位数量" field="value"/>
-</popup>
+	<datagrid>
+		<element label="企业名称" field="name" width="100" />
+		<element label="产业类别" field="type" width="100" />
+		<element label="其它信息" field="info" width="100" />
+	</datagrid>
+	<datagridPopup>
+		<element label="指标" field="name" width="120"/>
+		<element label="数量" field="value" width="60"/>
+		<element label="单位" field="unit" width="50" />
+	</datagridPopup>
+	<contents>
+		<element label="开发区级别" field=""  unit="-"/>
+		<element label="开发区核准面积" field=""   unit="公顷"/>
+		<element label="开发区填海面积" field=""   unit="公顷"/>
+		<element label="开发区海岸线长度" field=""   unit="千米"/>
+		<element label="开发区地区生产总值" field=""   unit="亿元"/>
+		<element label="开发区财政收入" field=""   unit="亿元"/>
+		<element label="开发区税收收入" field=""   unit="亿元"/>
+		<element label="开发区进口总额" field=""   unit="亿元"/>
+		<element label="开发区出口总额" field=""   unit="亿元"/>
+		<element label="开发区固定资产投资额" field=""  unit="亿元"/>
+		<element label="开发区年末从业人员" field=""   unit="万人"/>
+		<element label="开发区单位数量" field=""   unit="个"/>
+	</contents>
+	<popup>
+		<element label="名称" field="name" />
+		<element label="级别" field="value" />
+		<element label="核准面积" field="value" />
+		<element label="填海面积" field="value" />
+		<element label="海岸线长度" field="value" />
+		<element label="地区生产总值" field="value" />
+		<element label="财政收入" field="value" />
+		<element label="税收收入" field="value" />
+		<element label="进口总额" field="value" />
+		<element label="出口总额" field="value" />
+		<element label="固定资产投资额" field="value" />
+		<element label="年末从业人员" field="value" />
+		<element label="单位数量" field="value" />
+	</popup>
 </configuration>

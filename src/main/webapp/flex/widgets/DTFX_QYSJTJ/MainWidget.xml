@@ -7,7 +7,7 @@
 <popup>
 <element label="企业名称" field="name"/>
 <element label="地址" field="address"/>
-<element label="联系人" field="pname" unit="℃"/>
-<element label="联系人电话" field="phone" unit="℃"/>
+<element label="联系人" field="pname"/>
+<element label="联系人电话" field="phone"/>
 </popup>
 </configuration>
