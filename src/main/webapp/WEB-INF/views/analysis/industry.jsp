@@ -54,9 +54,9 @@
 								    		}];
 				        	
 				        	if($('#type').val() == '2'){
-					        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,datas,1);
+					        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,datas,'总量');
 				        	}else{
-					        	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,datas,1);
+					        	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,datas,'总量');
 				        	}
 				        }else{
 				        	alert(data.desc);

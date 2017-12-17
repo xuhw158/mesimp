@@ -13,7 +13,7 @@ a{text-decoration:none;}
 .content_left_menus{border:1px solid #3b84c9; width:167px; margin:0 auto; background-color:#ffffff; }
 .content_left_menus ul li { text-align:center; list-style:square inside url(../img/icon/icon01.png);border-bottom:1px solid #b7b7b8; margin:0 5px;}
 .content_left_menus ul li a{ padding:5px 0;  margin:0 auto; display:inline-block; color:#353535; text-decoration:none;}
-.content_left_menus ul li a.active{background-color:#3b84c9;color:#ffffff;}
+.content_left_menus ul li a.active{color:#3b84c9;}
 
 /*内容部分统一样式*/
 .c_wrap{margin:10px; padding-right:20px;border-bottom:1px solid #b7b7b8; padding-bottom:5px; }

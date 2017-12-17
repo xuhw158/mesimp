@@ -5,6 +5,9 @@ function resizeIndex(){
 
 function resizeWrap(){
 	var leftWidth = $('.content_left').outerWidth();
-	
-	$('.content_right').width($(window).width() - leftWidth);
+	if($('body').outerHeight() > $(window).height() ){
+		$('.content_right').width($(window).width() - leftWidth - 20);
+	}else{
+		$('.content_right').width($(window).width() - leftWidth);
+	}
 }

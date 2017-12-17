@@ -33,9 +33,19 @@ public class SunrveyService {
 	
 	public List<CompanyNum> getCompanyNumData(String codes) throws Exception{
 		List<CompanyNum> datalist = new ArrayList<CompanyNum>();
-		String[] codeArr = codes.split("[|]");
-		for(String code : codeArr) {
-			datalist.add(testNumMap.get(code));
+		if("liaoning".equals(codes)){
+			datalist.addAll(testNumMap.values());
+		}else{
+			datalist.add(new CompanyNum("116000", "中山区", 9831,1));
+			datalist.add(new CompanyNum("116000", "西岗区", 4835,2));
+			datalist.add(new CompanyNum("116000", "沙河口区", 1234,3));
+			datalist.add(new CompanyNum("116000", "甘井子区", 2123,4));
+			datalist.add(new CompanyNum("116000", "旅顺口区", 7912,5));
+			datalist.add(new CompanyNum("116000", "金州新区", 3214,6));
+			datalist.add(new CompanyNum("116400", "庄河市", 2763,7));
+			datalist.add(new CompanyNum("116300", "瓦房店市", 2031,8));
+			datalist.add(new CompanyNum("116200", "普兰店区", 2341,9));
+			datalist.add(new CompanyNum("116500", "长海县", 6021,10));
 		}
 		return datalist;
 	}

@@ -48,7 +48,7 @@ var CreateChart = {
 				});
 		},
 		
-		createPieWithTable : function(divId , titleField , valueField ,columns, dataProvider,isTotal){
+		createPieWithTable : function(divId , titleField , valueField ,columns, dataProvider,totalName){
 			var mainDiv = $('#'+divId).addClass('row');
 			
 			var chartDiv = $('<div class="col-sm-6" id="chart_'+ divId+'">').css('height','100%');
@@ -60,18 +60,18 @@ var CreateChart = {
 			
 			var chart = CreateChart.createPie('chart_' + divId , titleField , valueField , dataProvider);
 			
+			var tabelData = $.extend([],dataProvider);
 			// 总量统计
-			if(isTotal){
+			if(totalName){
 				var total=0;
-				$.each(dataProvider,function(k,v){
+				$.each(tabelData,function(k,v){
 					total += parseInt(v[valueField]);
 				});
 				var totalObj = {};
-				totalObj[titleField] = '总量';
+				totalObj[titleField] = totalName;
 				totalObj[valueField] = total;
-				dataProvider.push(totalObj);
+				tabelData.push(totalObj);
 			}
-			
 			// 表格基础设置
 			var tableOptions = {
 				striped : true, // 是否显示行间隔色
@@ -80,15 +80,19 @@ var CreateChart = {
 				undefinedText : '', // undefined时显示文本
 				checkboxHeader : false, // 是否显示全选
 				columns:columns,
-				data:dataProvider
+				data:tabelData
 			};
 			table.bootstrapTable(tableOptions);// 加载基本表格
+			if(mainDiv.height() < tableDiv.height()){
+				mainDiv.height(tableDiv.height());
+			}
+			chartDiv.height(mainDiv.height());
 			
 			return {chart:chart , table:table};
 		},
 		
 		
-		createSerialWithTable : function (divId , titleField , valueField ,columns , dataProvider,isTotal){
+		createSerialWithTable : function (divId , titleField , valueField ,columns , dataProvider,totalName){
 			var mainDiv = $('#'+divId).addClass('row');
 			
 			var chartDiv = $('<div class="col-sm-6" id="chart_'+ divId+'">').css('height','100%');
@@ -100,18 +104,18 @@ var CreateChart = {
 			
 			var chart = CreateChart.createSerial('chart_' + divId , titleField , valueField , dataProvider);
 			
+			var tabelData = $.extend([],dataProvider);
 			// 总量统计
-			if(isTotal){
+			if(totalName){
 				var total=0;
-				$.each(dataProvider,function(k,v){
+				$.each(tabelData,function(k,v){
 					total += parseInt(v[valueField]);
 				});
 				var totalObj = {};
-				totalObj[titleField] = '总量';
+				totalObj[titleField] = totalName;
 				totalObj[valueField] = total;
-				dataProvider.push(totalObj);
+				tabelData.push(totalObj);
 			}
-			
 			// 表格基础设置
 			var tableOptions = {
 				striped : true, // 是否显示行间隔色
@@ -120,9 +124,14 @@ var CreateChart = {
 				undefinedText : '', // undefined时显示文本
 				checkboxHeader : false, // 是否显示全选
 				columns:columns,
-				data:dataProvider
+				data:tabelData
 			};
 			table.bootstrapTable(tableOptions);// 加载基本表格
+			if(mainDiv.height() < tableDiv.height()){
+				mainDiv.height(tableDiv.height());
+			}
+			chartDiv.height(mainDiv.height());
+			
 			
 			return {chart:chart , table:table};
 		}

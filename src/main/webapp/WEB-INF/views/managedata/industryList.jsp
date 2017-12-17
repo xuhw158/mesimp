@@ -126,7 +126,7 @@
 					    </div>
 					 </div>
 					<div class="col-sm-4 form-group">
-						<button type="button" class="btn btn-primary" onclick="_search()">查询</button>
+						<button type="button" class="btn btn-primary" onclick="_search()" style="margin-left:20px;">查询</button>
 					</div>
 				</form>
 			</div>

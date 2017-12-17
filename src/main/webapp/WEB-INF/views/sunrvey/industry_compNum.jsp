@@ -8,52 +8,88 @@
 		<jsp:include page="../include/head.jsp"></jsp:include>
 		<script src="${basePath}/static/js/createChart.js" ></script>
 		<script type="text/javascript">
-			$(function(){
-				_search();
-			});
-			
-			function _search(){
-				
-				/* var $cityInput = $(':radio[name="sel_city"]:checked');
-				var codes = '';
-				$cityInput.each(function(i , obj){
-					codes += (obj.value + '|');
-				});
-				codes = codes.substring(0,codes.length-1); */
-				var param = {'codes':$(':radio[name="sel_city"]:checked').val()};
-				
-				$.ajax({
-					url:base_path + '/sunrvey/company/num/getData',
-				    type:'POST',
-				    data:param,
-				    dataType:'json', 
-				    success:function(data){
-				        if(data && data.code == 0){
-				        	var datas = data.data;
-				        	var columns =[ // 列设置
-								    		{
-								    			field : 'cityName', // 数据属性名
-								    			title : '地区', // 表格列头
-								    			align:'center'
-								    		},
-								    		{
-								    			field : 'number',
-								    			title : '数量',
-								    			align:'center'
-								    		}];
-				        	
-				        	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,datas,'总数');
-				        	resizeWrap();
-				        }else{
-				        	alert(data.desc);
-				        }
-				    }
-				});
-			}
+		var testData1 = [{
+			"cityCode": "110000",
+			"cityName": "沈阳市",
+			"number": 876,
+			"sort": 1
+		},
+		{
+			"cityCode": "116000",
+			"cityName": "大连市",
+			"number": 18976,
+			"sort": 2
+		},
+		{
+			"cityCode": "113000",
+			"cityName": "抚顺市",
+			"number": 432,
+			"sort": 4
+		},
+		{
+			"cityCode": "118000",
+			"cityName": "丹东市",
+			"number": 7890,
+			"sort": 6
+		},
+		{
+			"cityCode": "121000",
+			"cityName": "锦州市",
+			"number": 9807,
+			"sort": 7
+		},
+		{
+			"cityCode": "115000",
+			"cityName": "营口市",
+			"number": 4568,
+			"sort": 8
+		},
+		{
+			"cityCode": "124000",
+			"cityName": "盘锦市",
+			"number": 5467,
+			"sort": 11
+		},
+		{
+			"cityCode": "125000",
+			"cityName": "葫芦岛市",
+			"number": 8790,
+			"sort": 14
+		}
+		];	
+		     	
+    		$(function(){
+    			_search();
+    		});
+    		
+    		function _search(){
+    			
+    			/* var $cityInput = $(':radio[name="sel_city"]:checked');
+    			var codes = '';
+    			$cityInput.each(function(i , obj){
+    				codes += (obj.value + '|');
+    			});
+    			codes = codes.substring(0,codes.length-1); */
+    			var param = {'codes':$(':radio[name="sel_city"]:checked').val()};
+    			
+            	var columns =[ // 列设置
+    				    		{
+    				    			field : 'cityName', // 数据属性名
+    				    			title : '地区', // 表格列头
+    				    			align:'center'
+    				    		},
+    				    		{
+    				    			field : 'number',
+    				    			title : '数量',
+    				    			align:'center'
+    				    		}];
+            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+            	resizeWrap();
+    		}
 		</script>
 	</head>
 	<body>
-		<jsp:include page="inc/left.jsp"></jsp:include>
+		<jsp:include page="inc/ind_left.jsp"></jsp:include>
 		<div class="content_right">
 			<div class="c_wrap">
 				<div class="c_wrap_title">
