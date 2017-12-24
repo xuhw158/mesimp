@@ -19,7 +19,7 @@ public class UserService {
 			u.setUserName("zhangsan");
 			u.setRealName("张三");
 			u.setDepartment("信息部");
-			u.setAreaType("大连");
+			u.setAreaType("大连市");
 			userList.add(u);
 		}
 			

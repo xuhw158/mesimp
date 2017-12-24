@@ -25,23 +25,33 @@
 					    			align:'center'
 					    		},
 					    		{
-					    			field : 'enterpriseName',
-					    			title : '企业名称',
-					    			align:'center'
-					    		},
-					    		{
-					    			field : 'area',
-					    			title : '所属区域',
-					    			align:'center'
-					    		},
-					    		{
-					    			field : 'address',
-					    			title : '地址',
+					    			field : 'industryType',
+					    			title : '产业类别',
 					    			align:'center'
 					    		},
 					    		{
 					    			field : 'enterpriseCode',
-					    			title : '组织机构代码证号',
+					    			title : '组织机构代码',
+					    			align:'center'
+					    		},
+					    		{
+					    			field : 'name',
+					    			title : '单位名称',
+					    			align:'center'
+					    		},
+					    		{
+					    			field : 'business',
+					    			title : '主营业务',
+					    			align:'center'
+					    		},
+					    		{
+					    			field : 'industryCode',
+					    			title : '行业代码',
+					    			align:'center'
+					    		},
+					    		{
+					    			field : 'area',
+					    			title : '所在地',
 					    			align:'center'
 					    		},
 					    		{
@@ -51,17 +61,7 @@
 					    		},
 					    		{
 					    			field : 'telephone',
-					    			title : '联系电话',
-					    			align:'center'
-					    		},
-					    		{
-					    			field : 'industryType',
-					    			title : '所属产业类别',
-					    			align:'center'
-					    		},
-					    		{
-					    			field : 'managementSituation',
-					    			title : '企业生产经营情况',
+					    			title : '联系方式',
 					    			align:'center'
 					    		}
 			    			],

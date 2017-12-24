@@ -36,20 +36,26 @@
 		 	<label for="areaType" class="col-sm-4 control-label">所属区域：</label>
 		    <div class="col-sm-8">
 				  <select class="form-control">
-				  	<option>沈阳市</option>
-				    <option>大连市</option>
-				    <option>鞍山市</option>
-				    <option>抚顺市</option>
-				    <option>本溪市</option>
-				    <option>丹东市</option>
-				    <option>锦州市</option>
-				    <option>营口市</option>
-				    <option>阜新市</option>
-				    <option>辽阳市</option>
-				    <option>盘锦市</option>
-				    <option>铁岭市</option>
-				    <option>朝阳市</option>
-				    <option>葫芦岛市</option>
+			  	    <sec:authorize ifAnyGranted="ROLE_PRIVOINCE">  
+					  	<option>辽宁省</option>
+					  	<option>沈阳市</option>
+					    <option>大连市</option>
+					    <option>鞍山市</option>
+					    <option>抚顺市</option>
+					    <option>本溪市</option>
+					    <option>丹东市</option>
+					    <option>锦州市</option>
+					    <option>营口市</option>
+					    <option>阜新市</option>
+					    <option>辽阳市</option>
+					    <option>盘锦市</option>
+					    <option>铁岭市</option>
+					    <option>朝阳市</option>
+					    <option>葫芦岛市</option>
+				    </sec:authorize>  
+				    <sec:authorize ifAnyGranted="ROLE_CITY">  
+					    <option>大连市</option>
+				    </sec:authorize>  
 				  </select>
 		    </div>
 		 </div>

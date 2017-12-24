@@ -16,9 +16,6 @@
 				
 				var options = {
 						columns : [ // 列设置
-					            {  
-					                checkbox: true  
-					            },
 					    		{
 					    			field : 'order', // 数据属性名
 					    			title : '序号', // 表格列头
