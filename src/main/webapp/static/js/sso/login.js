@@ -36,17 +36,13 @@ function toLogout(){
 
 function hasLogin(){
 	$.ajax({
-		url:base_path + '/hasLogin',
-		type:'json',
-		success:function(data){
-			alert(data);
-		},
-		fail:function(){
-			alert('fail')
-		},
-		complate:function(){
-			alert(1)
-		}
+		  url: base_path + '/hasLogin',
+		  type: 'get',
+		  dataType: 'json',
+		  success: function (data, status) {
+			  var username = data.data.username;
+			$('#userInfo').html('<span>欢迎，'+username+'。</span><button class="btn btn-link" onclick="toLogout()">退出</button>')
+		  }
 	})
 }
 
