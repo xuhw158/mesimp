@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<configuration>
+	<datagrid>
+		<element label="企业名称" field="name" width="100" />
+		<element label="产业类别" field="type" width="100" />
+		<element label="其它信息" field="info" width="100" />
+	</datagrid>
+	<datagridPopup>
+		<element label="类别" field="name" width="120"/>
+		<element label="内容" field="value" width="150"/>
+		<element label="单位" field="unit" width="50" />
+	</datagridPopup>
+	<contents>
+		<element label="调查地点" field=""  unit="-"/>
+		<element label="风暴潮灾害造成直接经济损失" field=""   unit="万元"/>
+		<element label="风暴潮灾害造成死亡、失踪人口" field=""   unit="人"/>
+		<element label="海浪灾害造成直接经济损失" field=""   unit="万元"/>
+		<element label="海浪灾害造成死亡、失踪人口" field=""   unit="人"/>
+		<element label="海冰灾害造成直接经济损失" field=""   unit="万元"/>
+		<element label="海冰灾害造成死亡、失踪人口" field=""   unit="人"/>
+		<element label="赤潮灾害造成直接经济损失" field=""   unit="万元"/>
+		<element label="绿潮灾害造成直接经济损失" field=""   unit="万元"/>
+		<element label="咸潮入侵灾害造成直接经济损失" field=""   unit="万元"/>
+	</contents>
+	<popup>
+		<element label="名称" field="name" />
+		<element label="级别" field="value" />
+		<element label="核准面积" field="value" />
+		<element label="填海面积" field="value" />
+		<element label="海岸线长度" field="value" />
+		<element label="地区生产总值" field="value" />
+		<element label="财政收入" field="value" />
+		<element label="税收收入" field="value" />
+		<element label="进口总额" field="value" />
+		<element label="出口总额" field="value" />
+		<element label="固定资产投资额" field="value" />
+		<element label="年末从业人员" field="value" />
+		<element label="单位数量" field="value" />
+	</popup>
+</configuration>
