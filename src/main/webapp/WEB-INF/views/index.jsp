@@ -63,12 +63,14 @@
 					<li class="mainlevel">
 						<a href="#"  data-mid="3"><img alt="" src="${basePath }/static/img/menu04.png" width="50">专题调查</a>
 						<ul class="more150">
-				        	<li><a href="#" data-mid="3-1">海洋工程项目</a></li>
-				            <li><a href="#" data-mid="3-2">围填海规模</a></li>
-							<li><a href="#" data-mid="3-3">防灾减灾</a></li>
-							<li><a href="#" data-mid="3-4">海洋节能减排</a></li>
-							<li><a href="#" data-mid="3-5" data-src="/flex/index_ZTDC_LHKFQ.html">临海开发区</a></li>
-							<li><a href="#" data-mid="3-6">海岛海洋经济</a></li>
+				        	<li><a href="#" data-mid="3-1" data-src="/flex/index_ZTDC_HYGCXM.html">海洋工程项目</a></li>
+				            <li><a href="#" data-mid="3-2" data-src="/flex/index_ZTDC_WTHGC.html">围填海工程项目</a></li>
+							<li><a href="#" data-mid="3-3" data-src="/flex/index_ZTDC_FZJZ.html">防灾减灾机构</a></li>
+							<li><a href="#" data-mid="3-4" data-src="/flex/index_ZTDC_ZHSS.html">海洋灾害损失</a></li>
+							<li><a href="#" data-mid="3-5" data-src="/flex/index_ZTDC_PWK.html">陆源入海排污口</a></li>
+							<li><a href="#" data-mid="3-6" data-src="/flex/index_ZTDC_RHHL.html">入海河流</a></li>
+							<li><a href="#" data-mid="3-7" data-src="/flex/index_ZTDC_LHKFQ.html">临海开发区</a></li>
+							<li><a href="#" data-mid="3-8" data-src="/flex/index_ZTDC_HDX.html">海岛县</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">

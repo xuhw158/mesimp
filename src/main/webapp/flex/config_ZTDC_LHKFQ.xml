@@ -30,7 +30,7 @@
    <!--  <widget right="-2" bottom="-2" config="widgets/OverviewMap/OverviewMapWidget.xml" url="widgets/OverviewMap/OverviewMapWidget.swf"/> -->
     <widget right="15" top="15"    config="widgets/MapSwitcher/MapSwitcherWidget.xml" url="widgets/MapSwitcher/MapSwitcherWidget.swf"/>
     <widget left="300"   bottom="0"     config="widgets/FootController/HeaderControllerWidget.xml" url="widgets/FootController/HeaderControllerWidget.swf"/>
-	<widget label="模板" right="15"  bottom="20" config="widgets/ZTDC_LHKFQ/MainWidget.xml"  url="widgets/ZTDC_LHKFQ/MainWidget.swf"/>-->
+	<widget label="模板" right="15"  bottom="20" config="widgets/ZTDC_LHKFQ/MainWidget.xml"  url="widgets/ZTDC_LHKFQ/MainWidget.swf"/>
 	<widget label="地理位置" left="10"  bottom="5" config="widgets/Coordinate/CoordinateWidget.xml"  url="widgets/Coordinate/CoordinateWidget.swf"/> 
     <map  scalebarvisible="false"  addarcgisbasemaps="false">
         <basemaps>

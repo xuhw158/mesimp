@@ -6,10 +6,10 @@
 		<element label="其它信息" field="info" width="100" />
 	</datagrid>
 	<datagridPopup>
-		<element label="指标" field="name" width="120"/>
-		<element label="数量" field="value" width="60"/>
+		<element label="类别" field="name" width="120"/>
+		<element label="内容" field="value" width="150"/>
 		<element label="单位" field="unit" width="50" />
-	</datagridPopup>
+		</datagridPopup>
 	<contents>
 		<element label="开发区级别" field=""  unit="-"/>
 		<element label="开发区核准面积" field=""   unit="公顷"/>
