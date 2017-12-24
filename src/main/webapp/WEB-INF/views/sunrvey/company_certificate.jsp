@@ -47,6 +47,69 @@
 				"sort": 6
 			}
 			];	
+			
+			var testData2 = [
+			{
+				"cityCode": "116000",
+				"cityName": "中山区",
+				"number": 196,
+				"sort": 1
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "西岗区",
+				"number": 282,
+				"sort": 2
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "沙河口区",
+				"number": 268,
+				"sort": 3
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "甘井子区",
+				"number": 217,
+				"sort": 4
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "旅顺口区",
+				"number": 186,
+				"sort": 5
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "金州新区",
+				"number": 234,
+				"sort": 6
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "庄河市",
+				"number": 196,
+				"sort": 7
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "瓦房店市",
+				"number": 281,
+				"sort": 8
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "普兰店区",
+				"number": 187,
+				"sort": 9
+			},
+			{
+				"cityCode": "116000",
+				"cityName": "长海县",
+				"number": 295,
+				"sort": 10
+			}
+			];	
 		
 			$(function(){
 				_search();
@@ -62,6 +125,7 @@
 				codes = codes.substring(0,codes.length-1); */
 				var param = {'codes':$(':radio[name="sel_city"]:checked').val()};
 				
+				
 	        	var columns =[ // 列设置
 					    		{
 					    			field : 'cityName', // 数据属性名
@@ -74,7 +138,11 @@
 					    			align:'center'
 					    		}];
 	        	
-	        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+	        	if($(':radio[name="sel_city"]:checked').val() == 'liaoning'){
+		        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+	        	}else{
+		        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData2,'总数');
+	        	}
 	        	resizeWrap();
 			}
 		</script>

@@ -57,6 +57,69 @@
 			"sort": 14
 		}
 		];	
+		
+		var testData2 = [
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "中山区",
+			     				"number": 1770,
+			     				"sort": 1
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "西岗区",
+			     				"number": 1558,
+			     				"sort": 2
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "沙河口区",
+			     				"number": 2282,
+			     				"sort": 3
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "甘井子区",
+			     				"number": 1559,
+			     				"sort": 4
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "旅顺口区",
+			     				"number": 2090,
+			     				"sort": 5
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "金州新区",
+			     				"number": 2281,
+			     				"sort": 6
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "庄河市",
+			     				"number": 1929,
+			     				"sort": 7
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "瓦房店市",
+			     				"number": 1884,
+			     				"sort": 8
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "普兰店区",
+			     				"number": 1635,
+			     				"sort": 9
+			     			},
+			     			{
+			     				"cityCode": "116000",
+			     				"cityName": "长海县",
+			     				"number": 1988,
+			     				"sort": 10
+			     			}
+			     			];	
 		     	
     		$(function(){
     			_search();
@@ -83,7 +146,14 @@
     				    			title : '数量',
     				    			align:'center'
     				    		}];
-            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+            	
+            	if($(':radio[name="sel_city"]:checked').val() == 'liaoning'){
+            		
+	            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+            	}else{
+	            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData2,'总数');
+            		
+            	}
             	resizeWrap();
     		}
 		</script>
