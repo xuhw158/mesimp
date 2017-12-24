@@ -10,7 +10,7 @@ function toLogin(s){
 		      title:'登陆',
 		      skin:'',
 		      shade: 0.7,
-		      area: ['400px', '300px'],
+		      area: ['400px', '250px'],
 		      content:$('#toLogin')
 		  };
 	loginLayer = layer.open(layerOptions);

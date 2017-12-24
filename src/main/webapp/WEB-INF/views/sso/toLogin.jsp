@@ -15,7 +15,7 @@
 				    </div>
 				 </div>
 				 <div  class="form-group col-sm-12" >
-				 	<button class="btn btn-primary" type="submit">登陆</button>
+				 	<button class="btn btn-primary btn-block" type="submit">登陆</button>
 				 </div>
 			</form>
 		</div>
