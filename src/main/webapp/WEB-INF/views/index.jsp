@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
-<jsp:include page="include/tagLib.jsp"></jsp:include>
+<%@include file="include/tagLib.jsp" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,6 +7,7 @@
 		<title>辽宁海洋经济调查信息管理平台</title>
 		<jsp:include page="include/head.jsp"></jsp:include>
 		<script src="${basePath}/static/js/common-menu.js" ></script>
+		<script src="${basePath}/static/js/sso/login.js" ></script>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			jQuery.navlevel2 = function(level1,dytime) {
@@ -117,20 +118,27 @@
 				</ul>
 			</div>
 			<div id="index_banner">
-				<ul  class="nav nav-tabs">
-					<li  class="active">
-						<a href="#home" data-toggle="tab">  
-					       首页
-					       <label >&nbsp;</label>
-				        </a> 
-					</li>
-					<!-- <li>
-						<a href="#B" data-toggle="tab">
-							区域数据统计
-							<label data-dismiss="close">&nbsp;&nbsp;&times;</label>
-						</a>
-					</li> -->
-				</ul>
+				<div class="row">
+					<div class="col-sm-10">
+						<ul  class="nav nav-tabs">
+							<li  class="active">
+								<a href="#home" data-toggle="tab">  
+							       首页
+							       <label >&nbsp;</label>
+						        </a> 
+							</li>
+							<!-- <li>
+								<a href="#B" data-toggle="tab">
+									区域数据统计
+									<label data-dismiss="close">&nbsp;&nbsp;&times;</label>
+								</a>
+							</li> -->
+						</ul>
+					</div>
+					<div class="col-sm-2 text-right" id="userInfo">
+							<button class="btn btn-link" onclick="toLogin(1)">登陆</button>
+					</div>
+				</div>
 			</div>
 			<div id="index_main" class="tab-content">
 				 <div class="tab-pane  fade in active" id="home">
@@ -142,6 +150,7 @@
 			</div>
 		</div>
 		<jsp:include page="include/foot.jsp"></jsp:include>
+		<jsp:include page="sso/toLogin.jsp"></jsp:include>
 		<script type="text/javascript">
 			resizeIndex();
 			window.onresize = resizeIndex;

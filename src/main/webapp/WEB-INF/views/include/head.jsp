@@ -5,6 +5,7 @@
 	var base_path = '${basePath}';
  </script>
 <script src="${basePath}/static/jquery/jquery-1.9.1.min.js" ></script>
+<script src="${basePath}/static/jquery/jquery.form.min.js" ></script>
 <!-- Bootstrap 3.3.7 -->
 <link rel="stylesheet" href="${basePath}/static/bootstrap/css/bootstrap.min.css" >
 <link rel="stylesheet" href="${basePath}/static/bootstrap/css/bootstrap-theme.min.css" >

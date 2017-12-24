@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@include file="../../include/tagLib.jsp" %>
 <div class="content_left">
 	<div class="content_left_head">
 		<label>单位清查</label>

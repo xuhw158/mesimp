@@ -7,7 +7,7 @@
 #nav .mainlevel { float:left;  width:70px;/*IE6 only*/text-align: center; font-weight: bold; }
 #nav .mainlevel a {color:#ffffff; text-decoration:none; line-height:32px; display:block; padding:0 20px; width:100px;}
 #nav .mainlevel a:hover {color:#fff; text-decoration:none;}
-#nav .mainlevel ul {display:none; position:absolute;}
+#nav .mainlevel ul {display:none; position:absolute;z-index:100;}
 #nav .mainlevel li {border-top:1px solid #fff; background:#265cb6; width:100px;/*IE6 only*/}
 
 

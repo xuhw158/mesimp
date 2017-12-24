@@ -21,7 +21,7 @@ function createTab(id,title,src){
 		var panelHtml = $('<div class="tab-pane  fade" id="'+penelId+'">\
 				<iframe width="100%"  height="100%"  frameborder="0" src="'+ base_path + src+'"></iframe></div>');
 		
-		$('#index_banner > ul').append(tabHtml);
+		$('#index_banner  ul').append(tabHtml);
 		$('#index_main').append(panelHtml);
 		
 		$('#' + tabId).click();
@@ -35,8 +35,8 @@ function removeTab(id){
 	$('#' + tabId).parent().remove();
 	$('#' + penelId).remove();
 
-	if($('#index_banner > ul li[class=active]').length == 0){
-		$('#index_banner > ul li:first > a').click();
+	if($('#index_banner  ul li[class=active]').length == 0){
+		$('#index_banner  ul li:first > a').click();
 	}
 }
 

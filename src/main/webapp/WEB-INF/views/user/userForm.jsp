@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
-<jsp:include page="../include/tagLib.jsp"></jsp:include>
+<%@include file="../include/tagLib.jsp" %>
 <div id="userForm" class="form-content" style="display:none;">
 	<form action="" class="form-horizontal">
 		 <div  class="col-sm-6 form-group" >
