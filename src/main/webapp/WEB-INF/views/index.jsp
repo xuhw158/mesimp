@@ -76,14 +76,14 @@
 					<li class="mainlevel">
 						<a href="#" data-mid="4"><img alt="" src="${basePath }/static/img/menu06.png" width="50">经济地图</a>
 						<ul class="more200">
-				        	<li><a href="#" data-mid="4-1" data-src="/flex/index_JJDT_YY.html">海洋渔业企业分布图</a></li>
-				            <li><a href="#" data-mid="4-2" data-src="/flex/index_JJDT_YQ.html">海洋油气企业分布图</a></li>
-							<li><a href="#" data-mid="4-3" data-src="/flex/index_JJDT_JTYS.html">海洋交通运输企业分布图</a></li>
-							<li><a href="#" data-mid="4-4" data-src="/flex/index_JJDT_YYQY.html">海洋盐业企业分布图</a></li>
-							<li><a href="#" data-mid="4-5" data-src="/flex/index_JJDT_CBGY.html">海洋船舶工业企业分布图</a></li>
-							<li><a href="#" data-mid="4-6" data-src="/flex/index_JJDT_GCZB.html">海洋工程装备企业分布图</a></li>
-							<li><a href="#" data-mid="4-7" data-src="/flex/index_JJDT_HG.html">海洋化工企业分布图</a></li>
-							<li><a href="#" data-mid="4-8" data-src="/flex/index_JJDT_SWYL.html">海洋生物医疗企业分布图</a></li>
+				        	<li><a href="#" data-mid="4-1" data-src="/flex/index_JJDT_YY.html">海洋渔业企业分布</a></li>
+				            <li><a href="#" data-mid="4-2" data-src="/flex/index_JJDT_YQ.html">海洋油气企业分布</a></li>
+							<li><a href="#" data-mid="4-3" data-src="/flex/index_JJDT_JTYS.html">海洋交通运输企业分布</a></li>
+							<li><a href="#" data-mid="4-4" data-src="/flex/index_JJDT_YYQY.html">海洋盐业企业分布</a></li>
+							<li><a href="#" data-mid="4-5" data-src="/flex/index_JJDT_CBGY.html">海洋船舶工业企业分布</a></li>
+							<li><a href="#" data-mid="4-6" data-src="/flex/index_JJDT_GCZB.html">海洋工程装备企业分布</a></li>
+							<li><a href="#" data-mid="4-7" data-src="/flex/index_JJDT_HG.html">海洋化工企业分布</a></li>
+							<li><a href="#" data-mid="4-8" data-src="/flex/index_JJDT_SWYL.html">海洋生物医疗企业分布</a></li>
 				        </ul>
 					</li>
 					<li class="mainlevel">
