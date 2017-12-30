@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>单位清查数量</title>
+		<title>涉海单位上市企业数量</title>
 		<jsp:include page="../include/head.jsp"></jsp:include>
 		<script src="${basePath}/static/js/createChart.js" ></script>
 		<script type="text/javascript">
@@ -147,15 +147,15 @@
 		     				    		},
 		     				    		{
 		     				    			field : 'number',
-		     				    			title : '数量',
+		     				    			title : '数量（单位：家）',
 		     				    			align:'center'
 		     				    		}];
 		             	
 		             	if($(':radio[name="sel_city"]:checked').val() == 'liaoning'){
 		             		
-			             	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+			             	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'合计');
 		             	}else{
-			             	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData2,'总数');
+			             	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData2,'合计');
 		             		
 		             	}
 		             	resizeWrap();
@@ -199,7 +199,7 @@
 			</div>
 			<div class="c_wrap">
 				<div class="c_wrap_title">
-					<h4>图表展示</h4>
+					<h4>涉海单位上市企业数量</h4>
 				</div>
 				<div class="c_wrap_content">
 					 <div id="chartdiv1" ></div>

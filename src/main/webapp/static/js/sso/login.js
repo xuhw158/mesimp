@@ -19,10 +19,10 @@ function toLogin(s){
 		if(data.code == 0){
 			layer.close(loginLayer);
 			
-			var username = data.data.username;
+			/*var username = data.data.username;
 			$('#userInfo').html('<span>欢迎，'+username+'。</span><button class="btn btn-link" onclick="toLogout()">退出</button>')
 			
-			layer.alert('登录成功！');
+			layer.alert('登录成功！');*/
 		}else{
 			layer.msg('用户名或密码错误，登录失败！');
 		}
@@ -47,5 +47,5 @@ function hasLogin(){
 }
 
 $(function(){
-	hasLogin();
+//	hasLogin();
 })

@@ -4,56 +4,56 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>单位清查数量</title>
+		<title>产业调查企业数量</title>
 		<jsp:include page="../include/head.jsp"></jsp:include>
 		<script src="${basePath}/static/js/createChart.js" ></script>
 		<script type="text/javascript">
 		var testData1 = [{
 			"cityCode": "110000",
 			"cityName": "沈阳市",
-			"number": 876,
+			"number": 870,
 			"sort": 1
 		},
 		{
 			"cityCode": "116000",
 			"cityName": "大连市",
-			"number": 18976,
+			"number": 1897,
 			"sort": 2
 		},
 		{
 			"cityCode": "113000",
 			"cityName": "抚顺市",
-			"number": 432,
+			"number": 43,
 			"sort": 4
 		},
 		{
 			"cityCode": "118000",
 			"cityName": "丹东市",
-			"number": 7890,
+			"number": 789,
 			"sort": 6
 		},
 		{
 			"cityCode": "121000",
 			"cityName": "锦州市",
-			"number": 9807,
+			"number": 980,
 			"sort": 7
 		},
 		{
 			"cityCode": "115000",
 			"cityName": "营口市",
-			"number": 4568,
+			"number": 456,
 			"sort": 8
 		},
 		{
 			"cityCode": "124000",
 			"cityName": "盘锦市",
-			"number": 5467,
+			"number": 546,
 			"sort": 11
 		},
 		{
 			"cityCode": "125000",
 			"cityName": "葫芦岛市",
-			"number": 8790,
+			"number": 879,
 			"sort": 14
 		}
 		];	
@@ -62,61 +62,61 @@
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "中山区",
-			     				"number": 1770,
+			     				"number": 177,
 			     				"sort": 1
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "西岗区",
-			     				"number": 1558,
+			     				"number": 159,
 			     				"sort": 2
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "沙河口区",
-			     				"number": 2282,
+			     				"number": 228,
 			     				"sort": 3
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "甘井子区",
-			     				"number": 1559,
+			     				"number": 155,
 			     				"sort": 4
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "旅顺口区",
-			     				"number": 2090,
+			     				"number": 209,
 			     				"sort": 5
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "金州新区",
-			     				"number": 2281,
+			     				"number": 228,
 			     				"sort": 6
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "庄河市",
-			     				"number": 1929,
+			     				"number": 192,
 			     				"sort": 7
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "瓦房店市",
-			     				"number": 1884,
+			     				"number": 188,
 			     				"sort": 8
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "普兰店区",
-			     				"number": 1635,
+			     				"number": 163,
 			     				"sort": 9
 			     			},
 			     			{
 			     				"cityCode": "116000",
 			     				"cityName": "长海县",
-			     				"number": 1988,
+			     				"number": 198,
 			     				"sort": 10
 			     			}
 			     			];	
@@ -143,15 +143,15 @@
     				    		},
     				    		{
     				    			field : 'number',
-    				    			title : '数量',
+    				    			title : '数量（单位：家）',
     				    			align:'center'
     				    		}];
             	
             	if($(':radio[name="sel_city"]:checked').val() == 'liaoning'){
             		
-	            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+	            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData1,'合计');
             	}else{
-	            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData2,'总数');
+	            	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,testData2,'合计');
             		
             	}
             	resizeWrap();
@@ -195,7 +195,7 @@
 			</div>
 			<div class="c_wrap">
 				<div class="c_wrap_title">
-					<h4>图表展示</h4>
+					<h4>产业调查企业数量</h4>
 				</div>
 				<div class="c_wrap_content">
 					 <div id="chartdiv1" style="min-height: 450px;"></div>

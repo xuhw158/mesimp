@@ -137,9 +137,9 @@
 							</li> -->
 						</ul>
 					</div>
-					<div class="col-sm-2 text-right" id="userInfo">
+					<!-- <div class="col-sm-2 text-right" id="userInfo">
 							<button class="btn btn-link" onclick="toLogin(1)">登陆</button>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div id="index_main" class="tab-content">
