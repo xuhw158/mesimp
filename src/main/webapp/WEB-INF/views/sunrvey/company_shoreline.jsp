@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>用海岸线长度</title>
+		<title>涉海单位占用海岸线的长度</title>
 		<jsp:include page="../include/head.jsp"></jsp:include>
 		<script src="${basePath}/static/js/createChart.js" ></script>
 		<script type="text/javascript">
@@ -133,13 +133,13 @@
      					    		},
      					    		{
      					    			field : 'number',
-     					    			title : '数量',
+     					    			title : '数量（单位：米）',
      					    			align:'center'
      					    		}];
      	        	if($(':radio[name="sel_city"]:checked').val() == 'liaoning'){
-	     	        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData1,'总数');
+	     	        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData1,'合计');
      	        	}else{
-	     	        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData2,'总数');
+	     	        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,testData2,'合计');
      	        	}
      	        	resizeWrap();
      			}
@@ -174,7 +174,7 @@
 			</div>
 			<div class="c_wrap">
 				<div class="c_wrap_title">
-					<h4>图表展示</h4>
+					<h4>涉海单位占用海岸线的长度</h4>
 				</div>
 				<div class="c_wrap_content">
 					 <div id="chartdiv1" style="min-height: 450px;"></div>

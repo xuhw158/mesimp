@@ -49,14 +49,14 @@
 								    		},
 								    		{
 								    			field : 'number',
-								    			title : '产量',
+								    			title : '产量（单位：吨）',
 								    			align:'center'
 								    		}];
 				        	
 				        	if($('#type').val() == '2'){
-					        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,datas,'总量');
+					        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,datas,'合计');
 				        	}else{
-					        	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,datas,'总量');
+					        	CreateChart.createPieWithTable('chartdiv1','cityName','number',columns,datas,'合计');
 				        	}
 				        }else{
 				        	alert(data.desc);

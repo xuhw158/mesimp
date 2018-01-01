@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>单位清查数量</title>
+		<title>产业调查分产业企业数量</title>
 		<jsp:include page="../include/head.jsp"></jsp:include>
 		<script src="${basePath}/static/js/createChart.js" ></script>
 		<script type="text/javascript">
@@ -38,11 +38,11 @@
 								    		},
 								    		{
 								    			field : 'number',
-								    			title : '数量',
+								    			title : '数量（单位：家）',
 								    			align:'center'
 								    		}];
 				        	
-				        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,datas,'总量');
+				        	CreateChart.createSerialWithTable('chartdiv1','cityName','number',columns,datas,'合计');
 				        	resizeWrap();
 				        }else{
 				        	alert(data.desc);
@@ -105,7 +105,7 @@
 			</div>
 			<div class="c_wrap">
 				<div class="c_wrap_title">
-					<h4>图表展示</h4>
+					<h4>产业调查分产业企业数量</h4>
 				</div>
 				<div class="c_wrap_content">
 					 <div id="chartdiv1" style="min-height: 450px;"></div>
