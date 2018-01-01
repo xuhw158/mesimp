@@ -23,3 +23,21 @@ a{text-decoration:none;}
 
 /*弹窗样式*/
 .form-content{padding-top:10px;}
+
+
+/*login*/
+.login-layer{background: none; box-shadow:0 10px 20px rgba(0, 0, 0, 0.6);}
+.login-layer #login-layer{overflow:hidden;}
+.login-layer #toLogin{position: relative; background: url(../img/login_bg.png) no-repeat; height:100%;}
+.login-layer .login-form{width:250px; position: absolute; left:165px; top: 70px; color:#ffffff;}
+.login-layer .login-form .col-sm-4,.login-layer .login-form .col-sm-8{padding:5px 0;}
+.login-layer .login-form input{height:24px; font-size:12px;}
+.login-layer .login-form button{
+	margin-left: 45px;
+	padding: 3px 25px;
+	background: #469CBF;
+	border: 1px solid #87E9FF;
+	border-radius: 10px;
+}
+.login-layer .login-title{ color:#171483; font-size:16px; margin-left:20px; font-weight: 400;}
+.login-layer .login-logo{position: absolute; left:20px; top:70px;}

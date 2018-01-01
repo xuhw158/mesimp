@@ -6,11 +6,12 @@ function toLogin(s){
 	}
 	
 	var layerOptions = {
+			  id:'login-layer',
 		      type: 1,
-		      title:'登陆',
-		      skin:'',
+		      title:false,
+		      skin:'login-layer',
 		      shade: 0.7,
-		      area: ['400px', '250px'],
+		      area: ['426px', '238px'],
 		      content:$('#toLogin')
 		  };
 	loginLayer = layer.open(layerOptions);
@@ -19,10 +20,10 @@ function toLogin(s){
 		if(data.code == 0){
 			layer.close(loginLayer);
 			
-			var username = data.data.username;
+			/*var username = data.data.username;
 			$('#userInfo').html('<span>欢迎，'+username+'。</span><button class="btn btn-link" onclick="toLogout()">退出</button>')
 			
-			layer.alert('登录成功！');
+			layer.alert('登录成功！');*/
 		}else{
 			layer.msg('用户名或密码错误，登录失败！');
 		}
@@ -47,5 +48,5 @@ function hasLogin(){
 }
 
 $(function(){
-	hasLogin();
+//	hasLogin();
 })
